@@ -34,9 +34,9 @@ const HalamanUtama = () => {
               sidebarList={[
                 { judul: "Mengenal Website", materi: "/mainPage/excel1" },
                 { judul: "Komponen Website", materi: "/mainPage/word1" },
-                { judul: "Layout Website", materi: "#" },
-                { judul: "Jenis Website", materi: "#" },
-                { judul: "Tentang Pengembang", materi: "#" },
+                { judul: "Layout Website", materi: "/mainPage/headingBootstrap" },
+                { judul: "Jenis Website", materi: "/mainPage/gridBootstrap" },
+                { judul: "Tentang Pengembang", materi: "mainPage/buttonBootstrap" },
               ]}
             />
           </div>

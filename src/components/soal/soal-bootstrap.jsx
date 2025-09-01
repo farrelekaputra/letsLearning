@@ -5,7 +5,7 @@ const LayoutSoal = ({ komponenSoal }) => {
   return (
     <section className="container md:h-screen h-auto w-full justify-center">
       <Navbar menuEnabled={false} />
-      <div className="content px-12 pt-20 flex flex-col md:flex-row gap-4 max-w-6xl mx-auto">
+      <div className="content px-12 pt-24 flex flex-col md:flex-row gap-4 max-w-6xl mx-auto">
         {komponenSoal.map(
           ({ tujuanSoal, judulSoal, detailSoal, deskripsiSoal, gambarSoal }, index) => {
             return (

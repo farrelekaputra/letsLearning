@@ -10,7 +10,9 @@ const Contohsoal = ({
   JudulSoal,
   singleSoal = false,
   popupFinish = false,
-  tampilNama = false // ⬅️ default false
+  onPopupClose = () => {},
+  tampilNama = false,
+  pesanPopup = ""
 }) => {
   const { daftarSoal, jawaban, aturJawaban, statusHasil, handleSubmit, handleCheckAll, sudahDikoreksi, skor } 
     = UseLogicSoal(soalCustom || []);
@@ -76,7 +78,7 @@ const Contohsoal = ({
 
         {singleSoal && skor !== null && sudahDikoreksi && (
           <div className="text-md">
-            {skor <= 10 
+            {skor <= 60 
               ? (<p className="text-red-600">Duh skor kamu {skor} masih kurang nih</p>) 
               : (<p className="text-green-600 font-semibold">Skor kamu {skor}, lanjut {namaUser && `${namaUser}`}!</p>)}
           </div>
@@ -91,19 +93,19 @@ const Contohsoal = ({
             Cek Jawaban
           </button>
 
-          {showNextButton && (
-            <button
-              disabled={!semuaSudahDijawab || !semuaBenar}
-              onClick={handleNext}
-              className={`p-2 w-full md:w-1/3 rounded transition ${
-                semuaSudahDijawab
-                  ? "bg-green-500 text-white hover:bg-green-400"
-                  : "bg-gray-300 text-gray-600 cursor-not-allowed"
-              }`}
-            >
-              Selanjutnya
-            </button>
-          )}
+        {showNextButton && (
+          <button
+            disabled={skor < 60} // ⬅️ sekarang tergantung skor
+            onClick={handleNext}
+            className={`tombolNext p-2 w-full md:w-1/3 rounded transition ${
+              skor >= 60
+                ? "bg-green-500 text-white hover:bg-green-400"
+                : "bg-gray-300 text-gray-600 cursor-not-allowed"
+            }`}
+          >
+            Selanjutnya
+          </button>
+        )}
         </div>
       </section>
 
@@ -112,7 +114,7 @@ const Contohsoal = ({
         <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
           <div className="bg-white rounded-xl shadow-lg p-6 w-80 text-center">
             <h2 className="text-xl font-bold mb-2">🎉 Mantap!</h2>
-            <p className="mb-4">{namaUser ? `${namaUser},` : ""} kamu sudah menyelesaikan soal ini</p>
+            <p className="mb-4">{namaUser ? `${namaUser},` : ""} {pesanPopup}</p>
             <button 
               onClick={handleCloseModal} 
               className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-400"

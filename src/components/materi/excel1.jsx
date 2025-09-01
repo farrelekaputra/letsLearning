@@ -7,12 +7,12 @@ const Excel1 = () => {
       <section>
         <LogicMateri
               penjelasanMateri={{
-                judulMateri: 'Pengenalan Microsoft Excel',
+                judulMateri: 'Pengenalan Website',
                 konten: [
-                  { tipe: 'paragraf', isi: 'Microsoft Excel adalah salah satu aplikasi yang paling sering digunakan dalam dunia kerja maupun pendidikan. Dengan Excel, kita bisa mengolah data secara cepat dan akurat, mulai dari penjumlahan sederhana sampai analisis data yang lebih kompleks. Pada materi ini, kita akan belajar bagaimana menggunakan rumus dasar di Excel, khususnya rumus COUNTIF, yaitu rumus untuk menghitung jumlah data berdasarkan kondisi tertentu. Misalnya, kita dapat menghitung berapa banyak siswa yang nilainya di atas 75 atau berapa banyak barang dalam daftar belanja yang termasuk kategori makanan. Dengan memahami dasar ini, kita bisa membuat pengolahan data menjadi lebih efisien dan praktis' },
-                  { tipe: 'gambar', url: 'https://www.teachermagazine.com/assets/images/teacher/The_state_of_the_teaching_profession.jpg', caption: 'caption' },
-                  { tipe: 'paragraf', isi: 'Selain itu, penggunaan rumus COUNTIF sangat membantu ketika kita berhadapan dengan data dalam jumlah besar. Bayangkan jika kita harus menghitung secara manual nilai siswa satu per satu atau jumlah barang dengan kriteria tertentu, tentu akan memakan banyak waktu. Dengan COUNTIF, kita cukup menuliskan rumus sekali saja, lalu Excel akan otomatis menghitung sesuai kondisi yang kita tentukan. Hal ini membuat pekerjaan menjadi lebih cepat, rapi, dan meminimalkan kesalahan.' },
-                  { tipe: 'paragraf', isi: 'Paragraf penutup materi' }
+                  { tipe: 'paragraf', isi: 'Website merupakan kumpulan halaman yang dapat diakses melalui internet menggunakan berbagai perangkat seperti Handphone, Tab atau Desktop dengan berbagai broswer di setiap perangkat. Jika dilakukan analogi, website merupakan sebuah kompartemen atau kabinet virtual yang berisi berbagai konten berdasarkan genre' },
+                  { tipe: 'gambar', url: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', caption: 'Penggunaan website di berbagai perangkat.' },
+                  { tipe: 'paragraf', isi: 'Kabinet virtual ini berisi berbagai genre yang dapat mengisi keseharian pengguna. Sebagai contoh pada genre entertaimen terdapat instagram dan tiktok dalam versi website, genre edukasi menyediakan wikipedia, dan ruang guru yang siap menemani kegiatan belajar mengajar, dan terdapat juga marketplace dimana pengguna dapat melihat dan membandingkan harga barang yang tersedia di internet' },
+                  { tipe: 'paragraf', isi: 'Nah, pada pembelajaran kali ini kalian akan diarahkan dari sudut pandang pengembang website yang dibantu oleh jalan pintas bernama "framework", jadi mari kita mulai!' }
                 ]
               }}
             />
@@ -25,11 +25,11 @@ const Excel1 = () => {
               JudulSoal={'Coba jawab soal dibawah'}
               soalCustom={[
                 {
-                  pertanyaan: "apakah kamu sudah memahami benar?",
-                  pilihanJawaban: ["ya saya sudah paham", "sebentar saya perlu memahami lebih lanjut"],
-                  jawabanBenar: "ya saya sudah paham",
-                  clueJawabanBenar: "mantap mari lanjut ke materi selanjutnya",
-                  clueJawabanSalah: "coba deh pelajari lagi soal excel"
+                  pertanyaan: "Dibawah ini, manakah website yang akan kalian gunakan untuk hiburan?",
+                  pilihanJawaban: ["Wikipedia", "Duolingo", "Netflix","E-Samsat"],
+                  jawabanBenar: "Netflix",
+                  clueJawabanBenar: "Mantap mari lanjut ke materi selanjutnya",
+                  clueJawabanSalah: "Hmm kurang tepat.. Coba deh tentang genre di Website"
                 }
               ]}
             />

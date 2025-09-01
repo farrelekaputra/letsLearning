@@ -5,13 +5,21 @@ const Materi1 = ({ penjelasanMateri }) => {
       <h1 className="judulMateri text-3xl font-semibold">{penjelasanMateri.judulMateri}</h1>
       {penjelasanMateri.konten.map((item, i) => {
         if (item.tipe === 'paragraf') {
-          return <p key={i} className="paragraf text-justify leading-relaxed">{item.isi}</p>;
+          return (
+            <p key={i} className="paragraf text-justify leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: item.isi }}
+            />
+          );
         }
         if (item.tipe === 'gambar') {
           return (
-            <div key={i}>
-              <img src={item.url} alt="Gambar" className="gambar w-full my-4" />
-              {item.caption && <div className="caption">{item.caption}</div>}
+            <div key={i} className="flex flex-col items-center">
+            <img 
+              src={item.url} 
+              alt="Gambar" 
+              className={`gambar my-4 w-full ${item.width || ""}`} 
+            />
+              {item.caption && <div className="caption text-sm text-gray-600">{item.caption}</div>}
             </div>
           );
         }

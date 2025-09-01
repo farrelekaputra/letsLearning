@@ -3,6 +3,9 @@ import Landing from './components/dashboard';
 import HalamanUtama from './components/mainPage';
 import Excel1 from './components/materi/excel1';
 import MulaiWord from './components/materi/word1';
+import HeadingBoostrap from './components/materi/bootstrap2';
+import GridBootstrap from './components/materi/bootstrap3';
+import ButtonBootstrap from './components/materi/bootstrap4';
 import ListSoal from './components/soal/soal-bootstrap';
 import SoalPack1 from './components/soal/bootstrap1';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -41,6 +44,9 @@ function App() {
         <Route path="/mainPage" element={<HalamanUtama />}>
           <Route path="excel1" element={<Excel1 />} />
           <Route path="word1" element={<MulaiWord />} />
+          <Route path="headingBootstrap" element={<HeadingBoostrap />} />
+          <Route path="gridBootstrap" element={<GridBootstrap />} />
+          <Route path="buttonBootstrap" element={<ButtonBootstrap />} />
         </Route>
 
 
