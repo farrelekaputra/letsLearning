@@ -9,6 +9,7 @@ import ButtonBootstrap from './components/materi/bootstrap4';
 import ListSoal from './components/soal/soal-bootstrap';
 import SoalPack1 from './components/soal/bootstrap1';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 function App() {
   return (
