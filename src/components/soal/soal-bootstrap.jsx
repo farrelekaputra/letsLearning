@@ -40,7 +40,7 @@ const ListSoal = () => {
           tujuanSoal: "/soal/soal1",   // ⬅️ absolute path
           judulSoal: "Pengenalan Bootstrap",
           gambarSoal: "https://icons.getbootstrap.com/assets/img/icons-hero.png",
-          detailSoal: "10 soal",
+          detailSoal: "6 soal",
           deskripsiSoal: "pilihan ganda",
         },
         {
