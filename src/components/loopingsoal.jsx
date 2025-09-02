@@ -14,7 +14,7 @@ const Contohsoal = ({
   tampilNama = false,
   pesanPopup = ""
 }) => {
-  const { daftarSoal, jawaban, aturJawaban, statusHasil, handleSubmit, handleCheckAll, sudahDikoreksi, skor } 
+  const { daftarSoal, jawaban, aturJawaban, hasil, statusHasil, handleSubmit, handleCheckAll, sudahDikoreksi, skor } 
     = UseLogicSoal(soalCustom || []);
 
   const semuaSudahDijawab = jawaban.every((j) => j !== "");
@@ -73,6 +73,17 @@ const Contohsoal = ({
                 </div>
               ))}
             </form>
+            {hasil[index] && (
+            <p
+              className={`mt-2 text-sm ${
+                statusHasil[index] === "benar"
+                  ? "text-green-600 font-medium"
+                  : "text-red-600"
+              }`}
+            >
+              {hasil[index]}
+            </p>
+          )}
           </div>
         ))}
 
@@ -83,6 +94,8 @@ const Contohsoal = ({
               : (<p className="text-green-600 font-semibold">Skor kamu {skor}, lanjut {namaUser && `${namaUser}`}!</p>)}
           </div>
         )}
+
+
 
         <div className="flex flex-col gap-2">
           <button
@@ -95,7 +108,7 @@ const Contohsoal = ({
 
         {showNextButton && (
           <button
-            disabled={skor < 60} // ⬅️ sekarang tergantung skor
+            disabled={skor < 60}
             onClick={handleNext}
             className={`tombolNext p-2 w-full md:w-1/3 rounded transition ${
               skor >= 60
