@@ -32,11 +32,11 @@ const HalamanUtama = () => {
           >
             <Sidebar
               sidebarList={[
-                { judul: "Mengenal Website", materi: "/mainPage/excel1" },
-                { judul: "Komponen Website", materi: "/mainPage/word1" },
-                { judul: "Layout Website", materi: "/mainPage/headingBootstrap" },
-                { judul: "Jenis Website", materi: "/mainPage/gridBootstrap" },
-                { judul: "Tentang Pengembang", materi: "mainPage/buttonBootstrap" },
+                { judul: "Pengenalan Website", materi: "/mainPage/excel1" },
+                { judul: "Pengantar Bootstrap", materi: "/mainPage/word1" },
+                { judul: "Tipografi Bootstrap", materi: "/mainPage/headingBootstrap" },
+                { judul: "Grid & Responsive", materi: "/mainPage/gridBootstrap" },
+                { judul: "Button Bootstrap", materi: "mainPage/buttonBootstrap" },
               ]}
             />
           </div>
