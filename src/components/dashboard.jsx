@@ -23,18 +23,10 @@ const Landing = ({ listActivity }) => {
   };
 
   return (
-    <div className="container p-8 flex flex-col w-full text-gray-800 justify-center items-center md:h-screen gap-8">
-      {/* Header */}
-      <section className="head flex flex-col w-full justify-center gap-4">
-        <h1 className="header text-center text-4xl font-bold">LetsLearning</h1>
-        <h2 className="header text-center text-xl">
-          Belajar Informatika Menjadi Lebih Menyenangkan Bersama Kami
-        </h2>
-      </section>
-
+    <div className="konten text-xl p-8 flex flex-col w-full text-white bg-blue-400 justify-center mx-auto items-center md:h-screen gap-8">
       {/* Content */}
       <section className="content w-full flex flex-col justify-center items-center gap-4">
-        <p className="text-xl">Apa yang ingin anda pelajari hari ini?</p>
+        <p>Apa yang ingin anda lakukan hari ini?</p>
         <div className="array flex gap-4 flex-col md:flex-row">
           {Array.isArray(listActivity) &&
             listActivity.map((item, index) => (
@@ -44,7 +36,7 @@ const Landing = ({ listActivity }) => {
                 className="card flex flex-wrap justify-center h-auto transition-transoform duration-75 md:px-0 md:h-48 gap-4 md:gap-2 items-center bg-blue-50 border-blue-400 hover:bg-white hover:border-4 border-2 w-full md:w-1/3 flex-row md:flex-col p-4 rounded-lg"
               >
                 <img src={item.gambar} alt="gambar" className="w-16" />
-                <p className="caption text-center text-xl">{item.keterangan}</p>
+                <p className="caption text-center text-gray-800">{item.keterangan}</p>
               </button>
             ))}
         </div>
