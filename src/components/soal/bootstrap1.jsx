@@ -8,7 +8,7 @@ const SoalPack1 = () => {
         <div className="container pt-20 px-12">
             <Contohsoal
               modeExcel={true}
-              singleSoal={false}
+              singleSoal={true}
               showNextButton
               nextPath="/listSoal"
               popupFinish={true}

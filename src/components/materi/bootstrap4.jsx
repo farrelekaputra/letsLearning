@@ -17,7 +17,7 @@ const ButtonBootstrap = () => {
                 />
                 <Contohsoal
                 modeExcel={true}
-                singleSoal={true}
+                singleSoal={false}
                 showNextButton={true}
                 nextPath="/"
                 popupFinish={true}

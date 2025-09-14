@@ -23,22 +23,18 @@ const Landing = ({ listActivity }) => {
   };
 
   return (
-    <div className="konten text-xl p-8 flex flex-col w-full text-white bg-blue-400 justify-center mx-auto items-center md:h-screen gap-8">
+    <div className="isiKonten p-8 flex flex-col w-full bg-blue-500 text-white justify-center items-center md:h-screen gap-8">
       {/* Content */}
       <section className="content w-full flex flex-col justify-center items-center gap-4">
-        <p>Apa yang ingin anda lakukan hari ini?</p>
+        <p className="text-xl">Apa yang ingin anda pelajari hari ini?</p>
         <div className="array flex gap-4 flex-col md:flex-row">
-          {Array.isArray(listActivity) &&
-            listActivity.map((item, index) => (
-              <button
-                key={index}
-                onClick={() => handleClick(item)}
-                className="card flex flex-wrap justify-center h-auto transition-transoform duration-75 md:px-0 md:h-48 gap-4 md:gap-2 items-center bg-blue-50 border-blue-400 hover:bg-white hover:border-4 border-2 w-full md:w-1/3 flex-row md:flex-col p-4 rounded-lg"
-              >
-                <img src={item.gambar} alt="gambar" className="w-16" />
-                <p className="caption text-center text-gray-800">{item.keterangan}</p>
-              </button>
-            ))}
+        {Array.isArray(listActivity) &&
+          listActivity.map(({ link, gambar, keterangan }, index) => (
+            <a key={index} href={link} className="card flex flex-wrap text-gray-800 hover:text-blue-500 justify-center h-auto transition-transoform duration-75 md:px-0 md:h-48 gap-4 md:gap-2 items-center bg-blue-50 border-blue-400 hover:bg-white hover:border-4 border-2 w-full md:w-1/3 flex-row md:flex-col p-4 rounded-lg">
+              <img src={gambar} alt="gambar" className="w-16"/>
+              <p className="caption text-center text-xl">{keterangan}</p>
+            </a>
+          ))}
         </div>
       </section>
     </div>

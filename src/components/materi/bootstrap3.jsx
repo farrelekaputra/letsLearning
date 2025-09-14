@@ -20,7 +20,7 @@ const GridBootstrap = () => {
                 />
                 <Contohsoal
                 modeExcel={true}
-                singleSoal={true}
+                singleSoal={false}
                 showNextButton={true}
                 nextPath="/mainPage/buttonBootstrap"
                 tampilNama={false}

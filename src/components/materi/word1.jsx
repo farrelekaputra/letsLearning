@@ -19,7 +19,7 @@ const MulaiWord = () => {
                 />
                 <Contohsoal
                 modeExcel={true}
-                singleSoal={true}
+                singleSoal={false}
                 showNextButton={true}
                 nextPath="/mainPage/headingBootstrap"
                 tampilNama={false}

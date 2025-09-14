@@ -18,7 +18,7 @@ const Excel1 = () => {
             />
             <Contohsoal
               modeExcel={true}
-              singleSoal={true}
+              singleSoal={false}
               showNextButton={true}
               nextPath="/mainPage/word1"
               tampilNama={false}
