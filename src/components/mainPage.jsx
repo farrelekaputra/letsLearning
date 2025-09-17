@@ -36,7 +36,7 @@ const HalamanUtama = () => {
                 { judul: "Pengantar Bootstrap", materi: "/mainPage/word1" },
                 { judul: "Tipografi Bootstrap", materi: "/mainPage/headingBootstrap" },
                 { judul: "Grid & Responsive", materi: "/mainPage/gridBootstrap" },
-                { judul: "Button Bootstrap", materi: "mainPage/buttonBootstrap" },
+                { judul: "Button Bootstrap", materi: "/mainPage/buttonBootstrap" },
               ]}
             />
           </div>
