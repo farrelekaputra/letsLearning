@@ -36,7 +36,7 @@ const Contohsoal = ({
   };
 
   return (
-    <div className="p-6 -mt-4">
+    <div className="p-4 md:p-6 -mt-4">
       {/* Popup Nama Reusable */}
       {showNamaPopup && (
         <PopupNama
@@ -50,7 +50,7 @@ const Contohsoal = ({
       <p className="cobaText text-2xl">{JudulSoal}</p>
 
       {/* isi soal tetap sama */}
-      <section className="soal mt-4 flex flex-col gap-6">
+      <section className="soal mt-4 flex flex-col gap-6 w-full">
         {daftarSoal.map((soal, index) => (
           <div key={index}>
             <h1>{soal.pertanyaan}</h1>

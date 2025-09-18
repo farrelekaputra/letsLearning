@@ -1,8 +1,7 @@
 const Materi1 = ({ penjelasanMateri }) => {
   return (
-    <div className="w-full mx-auto p-8 md:p-6 gap-6 flex flex-col text-gray-800">
-      
-      <h1 className="judulMateri text-3xl font-semibold">{penjelasanMateri.judulMateri}</h1>
+    <div className="w-full mx-auto p-4 md:p-6 gap-4 md:gap-6 flex flex-col text-gray-800">
+      <h1 className="judulMateri md:pt-0 text-3xl font-semibold">{penjelasanMateri.judulMateri}</h1>
       {penjelasanMateri.konten.map((item, i) => {
         if (item.tipe === 'paragraf') {
           return (

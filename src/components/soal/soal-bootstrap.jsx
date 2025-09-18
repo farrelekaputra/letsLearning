@@ -3,18 +3,18 @@ import { Link } from "react-router-dom";
 
 const LayoutSoal = ({ komponenSoal }) => {
   return (
-    <section className="container md:h-screen h-auto w-full justify-center">
+    <section className="isikonten md:h-screen h-auto w-full justify-center">
       <Navbar menuEnabled={false} />
-      <div className="content px-12 pt-24 flex flex-col md:flex-row gap-4 max-w-6xl mx-auto">
+      <div className="konten px-6 pt-24 flex flex-col md:flex-row gap-4 max-w-6xl mx-auto">
         {komponenSoal.map(
           ({ tujuanSoal, judulSoal, detailSoal, deskripsiSoal, gambarSoal }, index) => {
             return (
               <Link
                 to={tujuanSoal}
                 key={index}
-                className="flex mx-auto bg-white hover:bg-gray-100 transition-transform duration-75 justify-center p-4 border-2 rounded-xl"
+                className="flex mx-auto w-full bg-white hover:bg-gray-100 transition-transform duration-75 justify-start p-4 border-2 rounded-xl"
               >
-                <img src={gambarSoal} className="w-16" alt="" />
+                <img src={gambarSoal} className="w-16 h-12" alt="" />
                 <div className="soalContent flex flex-col">
                   <h1 className="text-xl">{judulSoal}</h1>
                   <ul className="flex gap-2">
