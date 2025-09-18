@@ -20,7 +20,7 @@ const HalamanUtama = () => {
   return (
     <section className="page1 flex flex-col h-auto md:h-screen mx-auto">
       <Navbar toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} menuEnabled={true} />
-      <div className="container w-full mx-auto flex h-auto">
+      <div className="isikonten w-full mx-auto flex h-auto">
           <div
             className={`
               fixed top-16 self-start h-screen left-0 

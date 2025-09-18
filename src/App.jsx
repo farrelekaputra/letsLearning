@@ -28,7 +28,7 @@ function App() {
           element={
             <section>
               <div className="kontenAtas h-screen flex flex-col justify-evenly">
-                <div className="nonWave-section md:h-3/4 gap-12 md:gap-0 p-12 md:p-20 flex flex-col-reverse md:flex-row mx-auto items-center">
+                <div className="nonWave-section md:h-3/4 gap-12 md:gap-0 p-8 md:p-20 flex flex-col-reverse md:flex-row mx-auto md:pt-0 pt-12 items-center">
                   <div className="text text-gray-800 flex flex-col gap-4 md:gap-6">
                     <h1 className='text-5xl text-orange-500 font-semibold'>Let's Learning</h1>
                     <p className='md:w-3/4 text-justify'>Belajar Informatika lebih menyenangkan bersama kami, mari mengeksplore lebih jauh tentang dunia informatika bersama! Bukan hanya sekedar koding, namun juga tentang jaringan dan desain!</p>
