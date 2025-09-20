@@ -41,7 +41,7 @@ const HalamanUtama = () => {
 
           <div
             className={`
-              flex w-full pt-20 transition-all duration-300 md:px-0 px-4 mb-8
+              flex w-full pt-20 transition-all duration-300 md:px-8 px-4 mb-8
               ${isSidebarOpen ? 'md:ms-64' : 'md:w-full'}
             `}
           >
