@@ -12,6 +12,7 @@ import SoalPack1 from './components/soal/bootstrap1';
 import landingImage from './assets/thumbnail.png'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import HalamanMateri from './components/listMateri';
 
 function App() {
   const landingRef = useRef(null);
@@ -46,7 +47,7 @@ function App() {
                 <Landing
                   listActivity={[
                     {
-                      link: "/mainPage/excel1",
+                      link: "/daftarMateri",
                       gambar: "https://api.iconify.design/fluent-color:planet-16.svg",
                       keterangan: "Lanjutkan Belajar",
                     },
@@ -58,7 +59,7 @@ function App() {
                     {
                       link: "/tentang",
                       gambar: "https://api.iconify.design/fluent-color:people-community-16.svg",
-                      keterangan: "Pengembang",
+                      keterangan: "Tentang Pengembang",
                     },
                   ]}
                 />
@@ -68,6 +69,9 @@ function App() {
         />
 
         {/* Semua materi lewat HalamanUtama */}
+        <Route>
+          <Route path="/daftarMateri" element={<HalamanMateri/>}/>
+        </Route>
         <Route path="/mainPage" element={<HalamanUtama />}>
           <Route path="excel1" element={<Excel1 />} />
           <Route path="word1" element={<MulaiWord />} />
