@@ -7,7 +7,7 @@ const SemuaMateri = ({KomponenMateri = []}) => {
             <Navbar menuEnabled={false}/>
             <div className='isiKonten flex flex-col pt-24 p-8 md:px-20 gap-4'>
                 <h1 className='text-2xl font-semibold'>Mau pilih materi mana nih?</h1>
-                <section className="deretan flex justify-start">
+                <section className="deretan flex justify-start gap-8">
                 {KomponenMateri.map(
                     ({gambar, tujuanmateri, judul, altGambar}, index) => {
                         return(
@@ -35,6 +35,18 @@ const HalamanMateri = () => {
                     altGambar:"ini contoh gambar",
                     tujuanmateri:"/mainPage/excel1",
                     judul:"Dasar Jaringan Komputer"
+                },
+                {
+                    gambar:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    altGambar:"pemrograman",
+                    tujuanmateri:"",
+                    judul:"Pengembangan Website"
+                },
+                {
+                    gambar:"https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    altGambar:"Illustrasi",
+                    tujuanmateri:"",
+                    judul:"Desain Figma"
                 }
         ]}/>
     )
