@@ -23,7 +23,7 @@ const Landing = ({ listActivity }) => {
   };
 
   return (
-    <div className="isiKonten p-8 flex flex-col w-full bg-blue-500 text-white justify-center items-center md:h-screen gap-8">
+    <div className="isiKonten p-8 py-12 flex flex-col w-full bg-blue-500 text-white justify-center items-center md:h-screen gap-8">
       <section className="content w-full flex flex-col justify-center items-center gap-4">
         <p className="text-xl">Apa yang ingin anda pelajari hari ini?</p>
         <div className="array flex gap-4 flex-col md:flex-row">

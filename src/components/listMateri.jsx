@@ -5,7 +5,7 @@ const SemuaMateri = ({KomponenMateri = []}) => {
     return(
         <section className='flex flex-col text-gray-800'>
             <Navbar menuEnabled={false}/>
-            <div className='isiKonten flex flex-col pt-24 p-8 gap-4'>
+            <div className='isiKonten flex flex-col pt-24 p-8 md:px-20 gap-4'>
                 <h1 className='text-2xl font-semibold'>Mau pilih materi mana nih?</h1>
                 <section className="deretan flex justify-start">
                 {KomponenMateri.map(

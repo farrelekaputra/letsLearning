@@ -9,7 +9,7 @@ const Excel1 = () => {
               penjelasanMateri={{
                 judulMateri: 'Pengenalan Website',
                 konten: [
-                  { tipe: 'paragraf', isi: 'Website merupakan kumpulan halaman yang dapat diakses melalui internet menggunakan berbagai perangkat seperti Handphone, Tab atau Desktop dengan berbagai broswer di setiap perangkat. Jika dilakukan analogi, website merupakan sebuah kompartemen atau kabinet virtual yang berisi berbagai konten berdasarkan genre' },
+                  { tipe: 'paragraf', isi: 'Jaringan komputer merupakan dua atau lebih perangkat komputer yang berada satu wilayah dan saling terhubung satu sama lain. jaringan komputer ini berfungsi untuk sarana berkomunikasi antara satu perangkat dengan perangkat lainnya.' },
                   { tipe: 'gambar', url: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', caption: 'Penggunaan website di berbagai perangkat.' },
                   { tipe: 'paragraf', isi: 'Kabinet virtual ini berisi berbagai genre yang dapat mengisi keseharian pengguna. Sebagai contoh pada genre entertaimen terdapat instagram dan tiktok dalam versi website, genre edukasi menyediakan wikipedia, dan ruang guru yang siap menemani kegiatan belajar mengajar, dan terdapat juga marketplace dimana pengguna dapat melihat dan membandingkan harga barang yang tersedia di internet' },
                   { tipe: 'paragraf', isi: 'Nah, pada pembelajaran kali ini kalian akan diarahkan dari sudut pandang pengembang website yang dibantu oleh jalan pintas bernama "framework", jadi mari kita mulai!' }

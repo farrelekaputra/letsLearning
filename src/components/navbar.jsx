@@ -4,10 +4,10 @@ const Navbar = ({ toggleSidebar, menuEnabled = true}) => {
   const navigate = useNavigate();
 
   return (
-    <section className="flex shadow-md fixed justify-between p-4 px-10 md:px-16 mx-auto w-full z-[9999] bg-white">
+    <section className="flex shadow-md fixed justify-between p-4 px-7 md:px-16 mx-auto w-full z-[9999] bg-white">
       <ul className="flex items-center gap-4">
         <li>
-          <button onClick={toggleSidebar} className={`${menuEnabled ? "block" : "hidden"}`}>
+          <button onClick={toggleSidebar} className={`${menuEnabled ? "block" : "hidden"} me-4`}>
             <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 512 512">
               <path
                 fill="none"
@@ -20,7 +20,7 @@ const Navbar = ({ toggleSidebar, menuEnabled = true}) => {
             </svg>
           </button>
         </li>
-        <li className="font-semibold text-2xl text-blue-500">LetsLearning</li>
+        <li className="-ms-4 md:ms-0 font-semibold text-2xl text-blue-500">LetsLearning</li>
       </ul>
 
       <button
