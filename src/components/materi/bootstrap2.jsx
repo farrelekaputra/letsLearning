@@ -20,7 +20,7 @@ const PhysicalLayer = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/gridBootstrap"
+                nextPath="/mainPage/DataLink"
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar tipografi'}
                 soalCustom={[

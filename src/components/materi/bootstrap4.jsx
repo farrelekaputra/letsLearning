@@ -2,16 +2,17 @@ import btn from '../../assets/btn.png'
 import LogicMateri from '../materi1';
 import Contohsoal from '../loopingsoal';
 
-const ButtonBootstrap = () => {
+const NetworkLayer = () => {
     return(
         <section>
             <LogicMateri
                 penjelasanMateri={{
                     judulMateri: 'Warna Button',
                     konten: [
-                    { tipe: 'paragraf', isi: 'Button adalah salah satu komponen paling sering digunakan di sebuah website. Biasanya tombol digunakan untuk aksi tertentu, seperti submit form, login, download file, atau mengarahkan pengguna ke halaman lain. Bootstrap menyediakan class siap pakai untuk membuat tombol dengan berbagai gaya tanpa harus menulis CSS manual. Kamu hanya perlu menambahkan class btn diikuti dengan class warna tertentu.' },
-                    { tipe: 'gambar', width:"md:w-1/2", url: btn, caption: 'Membuat tombol menggunakan bootstrap' },
-                    { tipe: 'paragraf', isi: 'Button dalam sebuah website memiliki beberapa fungsi penting. Pertama, navigasi, yaitu mengarahkan pengguna ke halaman lain, misalnya tombol Home atau Detail. Kedua, form action, yang berfungsi untuk mengirim data dari form, seperti tombol Login atau Submit. Ketiga, trigger event, yaitu tombol yang memicu aksi tertentu, misalnya memunculkan modal, membuka menu dropdown, atau menjalankan fungsi JavaScript lainnya.' }
+                    { tipe: 'paragraf', isi: 'Lapisan ini berada di atas Data Link Layer. Kalau Data Link ngatur komunikasi antar perangkat yang langsung terhubung (misalnya laptop ke router), maka Network Layer bertugas untuk menentukan jalur perjalanan data dari pengirim ke penerima yang berbeda jaringan.' },
+                    { tipe: 'paragraf', isi: 'Fungsi utama dari layer ini adalah mengatur alamat logis (IP Address) dan menentukan rute terbaik (routing) agar data bisa sampai ke tujuan walaupun harus melewati banyak perangkat jaringan seperti router. Layer ini juga memastikan setiap potongan data punya alamat pengirim dan penerima yang benar.' },
+                    { tipe: 'gambar', width:"md:w-1/3", url: 'https://images.template.net/88066/free-wifi-router-vector-79z2t.jpg', caption: 'Router merupakan contoh perangkat yang berada di Network Layer' },
+                    { tipe: 'paragraf', isi: 'Kalau pakai contoh e-commerce tadi, Network Layer ini seperti kantor pos pusat atau jasa ekspedisi antar kota. Setelah paket dibungkus dan alamat rumah dicek oleh Data Link Layer (tukang pos lokal), sekarang giliran ekspedisi menentukan rute pengiriman antar kota atau antar negara. Mereka pilih jalur paling efisien supaya paket sampai ke penerima tanpa nyasar.' }
                     ]
                 }}
                 />
@@ -38,4 +39,4 @@ const ButtonBootstrap = () => {
     )
 }
 
-export default ButtonBootstrap
+export default NetworkLayer

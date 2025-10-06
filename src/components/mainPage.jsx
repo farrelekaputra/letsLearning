@@ -33,8 +33,8 @@ const HalamanUtama = () => {
                 { judul: "Pengantar OSI Model", materi: "/mainPage/osiLayer" },
                 { judul: "Lapisan OSI Model", materi: "/mainPage/pengertianLayer" },
                 { judul: "Physical Layer", materi: "/mainPage/physicalLayer" },
-                { judul: "Grid & Responsive", materi: "/mainPage/gridBootstrap" },
-                { judul: "Button Bootstrap", materi: "/mainPage/buttonBootstrap" },
+                { judul: "Data Link Layer", materi: "/mainPage/DataLink" },
+                { judul: "Network Layer", materi: "/mainPage/networklayer" },
               ]}
             />
           </div>

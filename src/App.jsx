@@ -4,8 +4,8 @@ import { useRef } from 'react';
 import HalamanUtama from './components/mainPage';
 import Jaringan from './components/materi/jaringanKomputer';
 import LayerOSI from './components/materi/word1';
-import GridBootstrap from './components/materi/bootstrap3';
-import ButtonBootstrap from './components/materi/bootstrap4'
+import DataLinkLayer from './components/materi/bootstrap3';
+import NetworkLayer from './components/materi/bootstrap4'
 import ListSoal from './components/soal/soal-bootstrap';
 import SoalPack1 from './components/soal/bootstrap1';
 import landingImage from './assets/thumbnail.png'
@@ -76,8 +76,8 @@ function App() {
           <Route path="osiLayer" element={<Jaringan />} />
           <Route path="pengertianLayer" element={<LayerOSI />} />
           <Route path="physicalLayer" element={<PhysicalLayer />} />
-          <Route path="gridBootstrap" element={<GridBootstrap />} />
-          <Route path="buttonBootstrap" element={<ButtonBootstrap />} />
+          <Route path="DataLink" element={<DataLinkLayer />} />
+          <Route path="networklayer" element={<NetworkLayer />} />
         </Route>
 
 
