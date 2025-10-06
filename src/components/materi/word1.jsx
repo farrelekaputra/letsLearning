@@ -1,19 +1,19 @@
-import bootstrapGambar from "../../assets/bootstrap.png"
-import htmlGambar from "../../assets/native.png"
+import osiLayer from "../../assets/osi-layer.png";
+import pindahData from "../../assets/data-moving.png";
 import LogicMateri from '../materi1';
 import Contohsoal from '../loopingsoal';
 
-const MulaiWord = () => {
+const LayerOSI = () => {
     return(
         <section>
             <LogicMateri
                 penjelasanMateri={{
-                    judulMateri: 'Pengantar Bootstrap',
+                    judulMateri: 'Lapisan OSI Model',
                     konten: [
-                    { tipe: 'paragraf', isi: 'Bootstrap adalah framework front-end yang sangat populer digunakan untuk membuat tampilan website. Framework ini berisi kumpulan kode siap pakai yang terdiri dari CSS, JavaScript, dan berbagai komponen UI. Dengan bootstrap juga, pembuatan website terasa seperti menggunakan jalan pintas dimana bootstrap dapat mempersingkat kode css mednjadi lebih sederhana.' },
-                    { tipe: 'gambar', width:"md:w-1/2", url: htmlGambar, caption: 'Membuat tombol menggunakan html native' },
-                    { tipe: 'gambar', width:"md:w-1/2", url: bootstrapGambar, caption: 'Membuat tombol menggunakan bootstrap' },
-                    { tipe: 'paragraf', isi: 'Mulai halaman ini dan 3 halaman kedepan, kita akan mulai memahami beberapa atribut yang sering digunakan pada bootstrap seperti tipografi, sistem grid, dan button' }
+                    { tipe: 'paragraf', isi: 'Jika sebelumnya kita sudah mengetahui apa itu OSI Model dan permisalannya, sekarang kita mencoba mengetahui cara kerja osi layer itu membagi urutan pengiriman data menjadi beberapa tahapan, supaya prosesnya teratur. ' },
+                    { tipe: 'gambar', url:osiLayer, caption:'Penjelasan cara kerja OSI Layer' },
+                    { tipe: 'paragraf', isi: 'Dari yang sudah dijelaskan sebelumnya, beberapa layer di OSI Layer itu dapat di misalkan seperti berbagai pihak yang terlibat di kegiatan belanja online seperti e Commerce, ekspedisi, kurir, dan penerima. Jadi untuk memudahkan identifikasi di layer mana kah data yang dikirim atau diterima bermasalah. Untuk cara kerja nya saat mengirimkan data dimulai dari Physical layer menuju Application Layer, sebaliknya untuk proses penerimaan data dimulai dari layer paling Application layer dan diteruskan hingga ke physical layer.' },
+                    { tipe: 'gambar', url:pindahData, caption:'Penjelasan cara kerja OSI Layer' },
                     ]
                 }}
                 />
@@ -23,14 +23,14 @@ const MulaiWord = () => {
                 showNextButton={true}
                 nextPath="/mainPage/headingBootstrap"
                 tampilNama={false}
-                JudulSoal={'Pertanyaan seputar bootstrap'}
+                JudulSoal={'Pertanyaan seputar lapisan OSI'}
                 soalCustom={[
                     {
-                    pertanyaan: "Bootstrap terdiri dari kumpulan apa saja?",
-                    pilihanJawaban: ["HTML, PHP, dan Python", "CSS, Javascript, dan komponen UI", "MySQL, MongoDB, dan PostgreSQL", "Photoshop dan CorelDraw"],
-                    jawabanBenar: "CSS, Javascript, dan komponen UI",
+                    pertanyaan: "Bagaimana proses server mengirim data?",
+                    pilihanJawaban: ["Network Layer -> Data-Link Layer", "Application Layer -> Physical Layer", "Physical Layer -> Application Layer", "Presentation Layer -> Physical Layer"],
+                    jawabanBenar: "Physical Layer -> Application Layer",
                     clueJawabanBenar: "mantap mari lanjut ke materi selanjutnya",
-                    clueJawabanSalah: "coba deh pelajari lagi soal excel"
+                    clueJawabanSalah: "coba deh pelajari lagi perpindahan data server"
                     }
                 ]}
                 />
@@ -38,4 +38,4 @@ const MulaiWord = () => {
     )
 }
 
-export default MulaiWord
+export default LayerOSI

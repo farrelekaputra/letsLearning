@@ -33,7 +33,7 @@ const HalamanMateri = () => {
                 {
                     gambar:"https://www.tokozoom.com/assets/img/artikel/cc298eaa95d0f7d64b1aa0f705b08800.jpg",
                     altGambar:"ini contoh gambar",
-                    tujuanmateri:"/mainPage/excel1",
+                    tujuanmateri:"/mainPage/osiLayer",
                     judul:"Dasar Jaringan Komputer"
                 },
                 {

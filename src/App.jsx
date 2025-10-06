@@ -2,8 +2,8 @@ import './App.css';
 import Landing from './components/dashboard';
 import { useRef } from 'react';
 import HalamanUtama from './components/mainPage';
-import Excel1 from './components/materi/excel1';
-import MulaiWord from './components/materi/word1';
+import Jaringan from './components/materi/jaringanKomputer';
+import LayerOSI from './components/materi/word1';
 import HeadingBoostrap from './components/materi/bootstrap2';
 import GridBootstrap from './components/materi/bootstrap3';
 import ButtonBootstrap from './components/materi/bootstrap4'
@@ -73,8 +73,8 @@ function App() {
           <Route path="/daftarMateri" element={<HalamanMateri/>}/>
         </Route>
         <Route path="/mainPage" element={<HalamanUtama />}>
-          <Route path="excel1" element={<Excel1 />} />
-          <Route path="word1" element={<MulaiWord />} />
+          <Route path="osiLayer" element={<Jaringan />} />
+          <Route path="pengertianLayer" element={<LayerOSI />} />
           <Route path="headingBootstrap" element={<HeadingBoostrap />} />
           <Route path="gridBootstrap" element={<GridBootstrap />} />
           <Route path="buttonBootstrap" element={<ButtonBootstrap />} />
