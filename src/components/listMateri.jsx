@@ -34,7 +34,7 @@ const HalamanMateri = () => {
                     gambar:"https://www.tokozoom.com/assets/img/artikel/cc298eaa95d0f7d64b1aa0f705b08800.jpg",
                     altGambar:"ini contoh gambar",
                     tujuanmateri:"/mainPage/osiLayer",
-                    judul:"Dasar Jaringan Komputer"
+                    judul:"Lapisan OSI Model"
                 },
                 {
                     gambar:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

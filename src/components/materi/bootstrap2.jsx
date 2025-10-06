@@ -1,19 +1,18 @@
 import bootstrapGambar from "../../assets/bootstrap.png"
-import htmlGambar from "../../assets/native.png"
+import layer1 from "../../assets/physical-layer.png"
 import LogicMateri from '../materi1';
 import Contohsoal from '../loopingsoal';
 
-const HeadingBoostrap = () => {
+const PhysicalLayer = () => {
     return(
         <section>
             <LogicMateri
                 penjelasanMateri={{
-                    judulMateri: 'Tipografi',
+                    judulMateri: 'Physical Layer',
                     konten: [
-                    { tipe: 'paragraf', isi: 'Tipografi adalah cara menampilkan teks pada website agar terlihat rapi dan mudah dibaca. Bayangkan saat kamu membuat website, tentu kamu ingin judulnya terlihat menonjol, isi teksnya jelas, dan keterangan tambahannya tidak mengganggu tampilan utama. Bootstrap sudah menyediakan berbagai class bawaan untuk mengatur ukuran, posisi, warna, dan gaya teks tanpa perlu menulis kode CSS dari awal. Dengan begitu, kamu tidak perlu repot menulis banyak aturan CSS hanya untuk membuat teks lebih menarik.' },
-                    { tipe: 'paragraf', isi: 'Pada bootstrap ada beberapa atribut teks seperti dibawah'},
-                    { tipe: 'paragraf', isi: '<h1 class="text-4xl">Class="h1"</h1> <h2 class="text-3xl">Class="h2"</h2> <h2 class="text-2xl">class="h3"</h2> <p class="font-bold">fw-bold</p> <p class="italic">fts-italic</p> <p class="underline">text-decoration-underline</p>'},
-                    { tipe: 'paragraf', isi: 'Sebagai catatan, semua atribut yang digunakan dalam bootstrap peletakannya ada didalam class, baik itu div, span, atau atribut lainnya.' }
+                    { tipe: 'paragraf', isi: 'Sesuai dengan namanya, layer ini merupakan lapisan yang terdiri dari perangkat keras yang dapat langsung berinteraksi dengan user secara fisik, lapisan ini berada di paling dasar. Lapisan ini berfungsi buat mengubah data jadi sinyal listrik, cahaya, atau gelombang radio. Untuk contoh perangkat atau protocol di layer ini terdapat perangkat yang menghubungkan antara device baik itu secara kabel atau nirkabel, untuk kabel contohnya terdapat LAN, Coaxial, dan Fiber Optik' },
+                    { tipe: 'gambar', url: layer1, caption: 'Contoh perangkat yang terdapat di Physical Layer' },
+                    { tipe: 'paragraf', isi: 'Nah, kalau pakai permisalan sebelumnya physical layer ini seperti pihak e commerce yang menyiapkan setiap pesanan yang di request oleh pembeli dan siap dikirimkan ke ekspedisi (layer selanjutnya).' }
                     ]
                 }}
                 />
@@ -26,11 +25,11 @@ const HeadingBoostrap = () => {
                 JudulSoal={'Pertanyaan seputar tipografi'}
                 soalCustom={[
                     {
-                    pertanyaan: "Jika menemukan istilah asing pada sebuah website, mana yang sebaiknya digunakan?",
-                    pilihanJawaban: ["Italic", "Underline", "Bold", "Heading"],
-                    jawabanBenar: "Italic",
+                    pertanyaan: "Diantara perangkat ini, mana kah yang termasuk dalam physical layer?",
+                    pilihanJawaban: ["Kabel", "Software", "Email", "Chrome"],
+                    jawabanBenar: "Kabel",
                     clueJawabanBenar: "mantap mari lanjut ke materi selanjutnya",
-                    clueJawabanSalah: "coba deh pelajari lagi soal excel"
+                    clueJawabanSalah: "coba deh pelajari lagi soal perangkat physical layer"
                     }
                 ]}
                 />
@@ -38,4 +37,4 @@ const HeadingBoostrap = () => {
     )
 }
 
-export default HeadingBoostrap
+export default PhysicalLayer

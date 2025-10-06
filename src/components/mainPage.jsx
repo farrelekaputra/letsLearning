@@ -30,9 +30,9 @@ const HalamanUtama = () => {
           >
             <Sidebar
               sidebarList={[
-                { judul: "Pengenalan Website", materi: "/mainPage/osiLayer" },
-                { judul: "Pengantar Bootstrap", materi: "/mainPage/pengertianLayer" },
-                { judul: "Tipografi Bootstrap", materi: "/mainPage/headingBootstrap" },
+                { judul: "Pengantar OSI Model", materi: "/mainPage/osiLayer" },
+                { judul: "Lapisan OSI Model", materi: "/mainPage/pengertianLayer" },
+                { judul: "Physical Layer", materi: "/mainPage/physicalLayer" },
                 { judul: "Grid & Responsive", materi: "/mainPage/gridBootstrap" },
                 { judul: "Button Bootstrap", materi: "/mainPage/buttonBootstrap" },
               ]}

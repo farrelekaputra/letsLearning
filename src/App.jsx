@@ -4,7 +4,6 @@ import { useRef } from 'react';
 import HalamanUtama from './components/mainPage';
 import Jaringan from './components/materi/jaringanKomputer';
 import LayerOSI from './components/materi/word1';
-import HeadingBoostrap from './components/materi/bootstrap2';
 import GridBootstrap from './components/materi/bootstrap3';
 import ButtonBootstrap from './components/materi/bootstrap4'
 import ListSoal from './components/soal/soal-bootstrap';
@@ -13,6 +12,7 @@ import landingImage from './assets/thumbnail.png'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Swal from 'sweetalert2'
 import HalamanMateri from './components/listMateri';
+import PhysicalLayer from './components/materi/bootstrap2';
 
 function App() {
   const landingRef = useRef(null);
@@ -75,7 +75,7 @@ function App() {
         <Route path="/mainPage" element={<HalamanUtama />}>
           <Route path="osiLayer" element={<Jaringan />} />
           <Route path="pengertianLayer" element={<LayerOSI />} />
-          <Route path="headingBootstrap" element={<HeadingBoostrap />} />
+          <Route path="physicalLayer" element={<PhysicalLayer />} />
           <Route path="gridBootstrap" element={<GridBootstrap />} />
           <Route path="buttonBootstrap" element={<ButtonBootstrap />} />
         </Route>
