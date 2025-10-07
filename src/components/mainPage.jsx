@@ -35,6 +35,10 @@ const HalamanUtama = () => {
                 { judul: "Physical Layer", materi: "/mainPage/physicalLayer" },
                 { judul: "Data Link Layer", materi: "/mainPage/DataLink" },
                 { judul: "Network Layer", materi: "/mainPage/networklayer" },
+                { judul: "Transport Layer", materi: "/mainPage/transportlayer" },
+                { judul: "Session Layer", materi: "/mainPage/sessionlayer" },
+                { judul: "Presentation Layer", materi: "/mainPage/presentationlayer" },
+                { judul: "Application Layer", materi: "/mainPage/applicationlayer" },
               ]}
             />
           </div>

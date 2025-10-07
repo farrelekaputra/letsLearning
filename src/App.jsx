@@ -3,9 +3,13 @@ import Landing from './components/dashboard';
 import { useRef } from 'react';
 import HalamanUtama from './components/mainPage';
 import Jaringan from './components/materi/jaringanKomputer';
-import LayerOSI from './components/materi/word1';
-import DataLinkLayer from './components/materi/bootstrap3';
-import NetworkLayer from './components/materi/bootstrap4'
+import LayerOSI from './components/materi/layerOSI';
+import DataLinkLayer from './components/materi/datalinkLayer';
+import NetworkLayer from './components/materi/networkLayer';
+import TransportLayer from './components/materi/transportLayer';
+import SessionLayer from './components/materi/sessionlayer';
+import PresentationLayer from './components/materi/presentationlayer';
+import ApplicationLayer from './components/materi/applicationlayer';
 import ListSoal from './components/soal/soal-bootstrap';
 import SoalPack1 from './components/soal/bootstrap1';
 import landingImage from './assets/thumbnail.png'
@@ -78,6 +82,10 @@ function App() {
           <Route path="physicalLayer" element={<PhysicalLayer />} />
           <Route path="DataLink" element={<DataLinkLayer />} />
           <Route path="networklayer" element={<NetworkLayer />} />
+          <Route path="transportlayer" element={<TransportLayer />} />
+          <Route path="sessionlayer" element={<SessionLayer />} />
+          <Route path="presentationlayer" element={<PresentationLayer />} />
+          <Route path="applicationlayer" element={<ApplicationLayer />} />
         </Route>
 
 
