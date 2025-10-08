@@ -17,47 +17,61 @@ const SoalPack1 = () => {
               JudulSoal={'Coba jawab soal dibawah'}
               soalCustom={[
                 {
-                  pertanyaan: "1. Class apa yang digunakan di Bootstrap untuk membuat teks menjadi tebal?",
-                  pilihanJawaban: ["fw-bold", "text-italic", "text-underline", "font-light"],
+                  pertanyaan: "1. Dalam konsep OSI Model, apa yang dikirimkan dari satu perangkat atau software ke tujuan?",
+                  pilihanJawaban: ["Paket", "Kabel", "Barang", "Data"],
                   jawabanBenar: "fw-bold",
-                  clueJawabanBenar: "Betul! 'fw-bold' dipakai untuk teks tebal di Bootstrap.",
+                  clueJawabanBenar: "Betul! yang dikirimkan antara satu perangkat ke perangkat lain dalam konsep OSI Model adalah data.",
                   clueJawabanSalah: "Tet tot jawabanmu salah"
                 },
                 {
-                  pertanyaan: "2. Dibawah ini, manakah website yang akan kalian gunakan untuk hiburan?",
-                  pilihanJawaban: ["Wikipedia", "Duolingo", "Netflix","E-Samsat"],
-                  jawabanBenar: "Netflix",
-                  clueJawabanBenar: "Betul! netflix menjadi salah satu website platform hiburan",
+                  pertanyaan: "2. Bagaimana proses server mengirim data?",
+                  pilihanJawaban: ["Application Layer -> Physical Layer", "Network Layer -> Data-Link Layer", "Presentation Layer -> Physical Layer","Physical Layer -> Application Layer"],
+                  jawabanBenar: "Physical Layer -> Application Layer",
+                  clueJawabanBenar: "Betul! proses perjalanan data dari server berjalan dari physical layer menuju application layer",
                   clueJawabanSalah: "Tet tot jawabanmu salah"
                 },
                 {
-                pertanyaan: "3. Bootstrap terdiri dari kumpulan apa saja?",
-                pilihanJawaban: ["HTML, PHP, dan Python", "CSS, Javascript, dan komponen UI", "MySQL, MongoDB, dan PostgreSQL", "Photoshop dan CorelDraw"],
-                jawabanBenar: "CSS, Javascript, dan komponen UI",
-                clueJawabanBenar: "betul! bootstrap disusun dari CSS, javascript dan beberapak komponen UI",
+                pertanyaan: "3. Diantara perangkat ini, mana kah yang termasuk dalam physical layer?",
+                pilihanJawaban: ["Gmail", "Kabel", "Chrome", "Galon"],
+                jawabanBenar: "Kabel",
+                clueJawabanBenar: "betul! ciri utama perangkat jaringan di physical layer adalah dapat dipegang dan dikonfigurasi",
                 clueJawabanSalah: "Tet tot jawabanmu salah"
                 },
                 {
-                pertanyaan: "4. Jika menemukan istilah asing pada sebuah website, mana yang sebaiknya digunakan?",
-                pilihanJawaban: ["Italic", "Underline", "Bold", "Heading"],
-                jawabanBenar: "Italic",
-                clueJawabanBenar: "Yap! Italic digunakan untuk istilah asing",
+                pertanyaan: "4. Perangkat yang berfungsi untuk menyebarkan sinyal secara wired (kabel) ke berbagai client atau tujuan adalah?",
+                pilihanJawaban: ["Access Point", "Router", "Provider", "Switch"],
+                jawabanBenar: "Switch",
+                clueJawabanBenar: "Yap! switch merupakan perangkat untuk mempercabang perangkat khususnya secara wired",
                 clueJawabanSalah: "Tet tot jawabanmu salah"
                 },
                 {
-                pertanyaan: "5. Jika website akan dibuat dengan lebar setengah layar, maka berapakah ukuran grid yang tepat?",
-                pilihanJawaban: ["col-8", "col-12", "col-4", "col-6"],
-                jawabanBenar: "col-6",
-                clueJawabanBenar: "Betul! col-6 digunakan untuk 1/2 layar yang berasal dari col-12",
+                pertanyaan: "5. Proses pencarian data tercepat disebut?",
+                pilihanJawaban: ["Subnetting", "Routing", "Addressing", "COding"],
+                jawabanBenar: "Routing",
+                clueJawabanBenar: "Betul! Routing merupakan proses mencari jalur tercepat ke tujuan",
                 clueJawabanSalah: "Tet tot jawabanmu salah"
                 },
                 {
-                pertanyaan: "6. Jika ingin menghapus item (darurat), sebaiknya menggunakan jenis button?",
-                pilihanJawaban: ["btn-danger", "btn-primary", "btn-success", "btn-info"],
-                jawabanBenar: "btn-danger",
-                clueJawabanBenar: "mantap! sesuai dengan namanya btn-danger tepat digunakan untuk beberapa keadaan yang urgensi",
+                pertanyaan: "6. Apa fungsi utama Trasport Layer?",
+                pilihanJawaban: ["Menentukan alamat IP tujuan data", "Menentukan jalur tercepat", "Mengubah data menjadi sinyal listrik", "Memastikan data sampai ke tujuan dengan utuh dan aman"],
+                jawabanBenar: "Memastikan data sampai ke tujuan dengan utuh dan aman",
+                clueJawabanBenar: "mantap! transport layer itu kaya kurir yang jamin paketmu utuh dan aman ketika sampai di rumah",
                 clueJawabanSalah: "Tet tot jawabanmu salah"
-                }
+                },
+                {
+                pertanyaan: "7. Proses mana yang bekerja ketika melakukan komentar pada sebuah video di YouTube?",
+                pilihanJawaban: ["Establish Process", "Terminate Process", "Maintain Process", "Searching Proccess"],
+                jawabanBenar: "Maintain Process",
+                clueJawabanBenar: "mantap! fungsi maintain process itu makesure setiap kegiatan di internet yang berhubungan sama aktivitas login",
+                clueJawabanSalah: "Tet tot jawabanmu salah"
+                },
+                {
+                pertanyaan: "8. Ketika kalian megnirim pesan lewat whatsApp layer apa yang pertama menanggapi nya?",
+                pilihanJawaban: ["Physical Layer", "Network Layer", "Session Layer", "Application Layer"],
+                jawabanBenar: "Application",
+                clueJawabanBenar: "mantap! Session layer berfungsi sebagai pemroses pertama pesan yang kalian kirim",
+                clueJawabanSalah: "Tet tot jawabanmu salah"
+                },
               ]}
             />
         </div>

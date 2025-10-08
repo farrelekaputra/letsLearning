@@ -1,9 +1,9 @@
 import Navbar from "../navbar";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom"; // ✅ import
+import { useNavigate } from "react-router-dom";
 
 const LayoutSoal = ({ komponenSoal }) => {
-  const navigate = useNavigate(); // ✅ inisialisasi
+  const navigate = useNavigate();
 
   const handleClick = (item) => {
     if (item.tujuanSoal !== "/soal/soal1") {
@@ -27,15 +27,17 @@ const LayoutSoal = ({ komponenSoal }) => {
   };
 
   return (
-    <section className="isikonten md:h-screen h-auto w-full justify-center">
+    <section className="text-gray-800 isikonten md:h-screen h-auto w-full justify-center">
       <Navbar menuEnabled={false} />
-      <div className="konten px-8 pt-24 flex flex-col md:flex-row gap-4 max-w-6xl mx-auto">
+      <div className="konten px-8 pt-24 flex flex-col gap-4 max-w-6xl mx-auto">
+        <h1 className="heading text-2xl font-semibold">Mau ngerjain latihan apa hari ini?</h1>
+        <div className="isikonten flex flex-col md:flex-row gap-4 max-w-6xl justify-center">
         {Array.isArray(komponenSoal) &&
           komponenSoal.map((item, index) => (
             <div
               key={index}
               onClick={() => handleClick(item)}
-              className="flex mx-auto w-full bg-white hover:bg-gray-100 transition-transform duration-75 justify-start p-4 border-2 rounded-xl cursor-pointer"
+              className="flex mx-auto w-full bg-white hover:bg-gray-100 transition-transform duration-75 justify-start p-4 border-2 gap-4 md:gap-6 rounded-xl cursor-pointer"
             >
               <img src={item.gambarSoal} className="w-16 h-12" alt="" />
               <div className="soalContent flex flex-col">
@@ -48,6 +50,7 @@ const LayoutSoal = ({ komponenSoal }) => {
               </div>
             </div>
           ))}
+        </div>
       </div>
     </section>
   );
@@ -59,25 +62,22 @@ const ListSoal = () => {
       komponenSoal={[
         {
           tujuanSoal: "/soal/soal1",
-          judulSoal: "Pengenalan Bootstrap",
-          gambarSoal:
-            "https://icons.getbootstrap.com/assets/img/icons-hero.png",
-          detailSoal: "6 soal",
+          judulSoal: "Pengenalan OSI Model",
+          gambarSoal: "https://www.shutterstock.com/image-vector/7-layer-osi-network-model-260nw-2435570561.jpg",
+          detailSoal: "8 soal",
           deskripsiSoal: "pilihan ganda",
         },
         {
           tujuanSoal: "",
-          judulSoal: "Bootstrap Lanjutan",
-          gambarSoal:
-            "https://icons.getbootstrap.com/assets/img/icons-hero.png",
+          judulSoal: "OSI Model Lanjutan",
+          gambarSoal: "https://www.shutterstock.com/image-vector/concept-osi-model-open-system-260nw-2341606833.jpg",
           detailSoal: "15 soal",
           deskripsiSoal: "pilihan ganda",
         },
         {
           tujuanSoal: "",
-          judulSoal: "Bootstrap Expert",
-          gambarSoal:
-            "https://icons.getbootstrap.com/assets/img/icons-hero.png",
+          judulSoal: "Pengenalan TCP/IP",
+          gambarSoal: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVXR8Y1CkwWs6-pU-QjgNcDbHryPaZ2krrgg&s",
           detailSoal: "20 soal",
           deskripsiSoal: "pilihan ganda",
         },

@@ -7,11 +7,11 @@ const SemuaMateri = ({KomponenMateri = []}) => {
             <Navbar menuEnabled={false}/>
             <div className='isiKonten flex flex-col pt-24 p-8 md:px-20 gap-4'>
                 <h1 className='text-2xl font-semibold'>Mau pilih materi mana nih?</h1>
-                <section className="deretan flex justify-start gap-8">
+                <section className="deretan flex justify-start gap-8 flex-wrap">
                 {KomponenMateri.map(
                     ({gambar, tujuanmateri, judul, altGambar}, index) => {
                         return(
-                            <Link to={tujuanmateri} key={index} className='semuaMateri p-4 flex flex-col justify-center items-center gap-2 rounded-xl border-2 border-gray-300 hover:border-blue-500'>
+                            <Link to={tujuanmateri} key={index} className='semuaMateri p-4 flex flex-col w-80 text-wrap justify-center items-center gap-2 rounded-xl border-2 border-gray-300 hover:border-blue-500'>
                                 <img src={gambar} className='w-40' alt={altGambar} />
                                 <div className="text-section">
                                     <h2 className='text-xl'>{judul}</h2>

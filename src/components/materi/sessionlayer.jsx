@@ -28,7 +28,7 @@ const SessionLayer = () => {
                     {
                     pertanyaan: "Proses mana yang bekerja ketika melakukan komentar pada sebuah video di YouTube?",
                     pilihanJawaban: ["Establish process", "Terminate process", "Maintain Process", "Searching Process"],
-                    jawabanBenar: "Maintain process",
+                    jawabanBenar: "Maintain Process",
                     clueJawabanBenar: "mantap mari lanjut ke materi selanjutnya",
                     clueJawabanSalah: "coba deh pelajari lagi contoh penggunaan Session Layer"
                     }
