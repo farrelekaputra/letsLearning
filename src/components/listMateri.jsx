@@ -6,9 +6,9 @@ import { useNavigate } from "react-router-dom";
 const SemuaMateri = ({KomponenMateri = []}) => {
     const navigate = useNavigate();
 
-  const handleClick = (item) => {
-    if (item.tujuanSoal !== "/mainPage/osiLayer") {
-      Swal.fire({
+    const handleClick = (item) => {
+    if (item.tujuanmateri !== "/mainPage/osiLayer") {
+        Swal.fire({
         toast: true,
         position: "top-end",
         icon: "info",
@@ -19,13 +19,13 @@ const SemuaMateri = ({KomponenMateri = []}) => {
         timerProgressBar: true,
         showCloseButton: true,
         didOpen: (popup) => {
-          popup.style.marginTop = "80px"
-        }
-      });
+            popup.style.marginTop = "80px";
+        },
+        });
     } else {
-      navigate(item.tujuanSoal);
+        navigate(item.tujuanmateri);
     }
-    }
+    };
 
     return(
         <section className='flex flex-col text-gray-800'>
