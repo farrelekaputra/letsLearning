@@ -3,6 +3,7 @@ import Segment from "../../assets/segment.png";
 import kurir from "../../assets/kurir.jpg";
 import LogicMateri from '../materi1';
 import Contohsoal from '../loopingsoal';
+import tcilustrasi from '../../assets/tcp-udp.png' 
 
 const TransportLayer = () => {
     return(
@@ -17,6 +18,7 @@ const TransportLayer = () => {
                     { tipe: 'paragraf', isi: 'Dari yang sudah dijelaskan sebelumnya, beberapa layer di OSI Layer itu dapat di misalkan seperti berbagai pihak yang terlibat di kegiatan belanja online seperti e Commerce, ekspedisi, kurir, dan penerima. Jadi untuk memudahkan identifikasi di layer mana kah data yang dikirim atau diterima bermasalah. Untuk cara kerja nya saat mengirimkan data dimulai dari Physical layer menuju Application Layer, sebaliknya untuk proses penerimaan data dimulai dari layer paling Application layer dan diteruskan hingga ke physical layer.' },
                     { tipe: 'gambar', url:kurir, caption:'Contoh kurir sebagai pengirim data' },
                     { tipe: 'paragraf', isi: 'Di Transport Layer juga terdapat dua protocol penting untuk proses pengiriman data, yaitu TCP dan UDP. TCP merupakan protocol yang berfungsi untuk memastikan setiap data dikirim secara berurutan dan lengkap, sedangkan UDP merupakan protocol pengiriman data dengan lebih cepat tanpa jaminan data sampai dengan utuh.' },
+                    { tipe: 'gambar', url:tcilustrasi, caption:'Ilustrasi pengiriman data' },
                     ]
                 }}
                 />
