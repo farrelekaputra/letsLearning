@@ -1,7 +1,32 @@
 import Navbar from '../components/navbar';
 import {Link} from 'react-router-dom';
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const SemuaMateri = ({KomponenMateri = []}) => {
+    const navigate = useNavigate();
+
+  const handleClick = (item) => {
+    if (item.tujuanSoal !== "/mainPage/osiLayer") {
+      Swal.fire({
+        toast: true,
+        position: "top-end",
+        icon: "info",
+        title: "Maaf!",
+        text: "Materi ini masih dikembangin",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        showCloseButton: true,
+        didOpen: (popup) => {
+          popup.style.marginTop = "80px"
+        }
+      });
+    } else {
+      navigate(item.tujuanSoal);
+    }
+    }
+
     return(
         <section className='flex flex-col text-gray-800'>
             <Navbar menuEnabled={false}/>
@@ -11,12 +36,12 @@ const SemuaMateri = ({KomponenMateri = []}) => {
                 {KomponenMateri.map(
                     ({gambar, tujuanmateri, judul, altGambar}, index) => {
                         return(
-                            <Link to={tujuanmateri} key={index} className='semuaMateri p-4 flex flex-col w-80 text-wrap justify-center items-center gap-2 rounded-xl border-2 border-gray-300 hover:border-blue-500'>
+                            <div key={index} onClick={() => handleClick({tujuanmateri})} className='semuaMateri cursor-pointer p-4 flex flex-col w-80 text-wrap justify-center items-center gap-2 rounded-xl border-2 border-gray-300 hover:border-blue-500'>
                                 <img src={gambar} className='w-40' alt={altGambar} />
                                 <div className="text-section">
                                     <h2 className='text-xl'>{judul}</h2>
                                 </div>
-                            </Link>
+                            </div>
                         )
                     }
                 )}
