@@ -23,7 +23,7 @@ const HalamanUtama = () => {
       <div className="isikonten w-full mx-auto flex h-auto">
           <div
             className={`
-              fixed top-16 self-start h-screen left-0 transition-transform duration-300 w-1/2 md:w-auto md:ps-8 pe-4
+              fixed top-16 self-start h-screen left-0 transition-transform duration-300 w-3/4 md:w-auto md:ps-8 pe-4
               ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
               bg-blue-600
             `}
