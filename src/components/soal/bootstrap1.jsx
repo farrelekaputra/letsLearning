@@ -19,7 +19,7 @@ const SoalPack1 = () => {
                 {
                   pertanyaan: "1. Dalam konsep OSI Model, apa yang dikirimkan dari satu perangkat atau software ke tujuan?",
                   pilihanJawaban: ["Paket", "Kabel", "Barang", "Data"],
-                  jawabanBenar: "fw-bold",
+                  jawabanBenar: "Data",
                   clueJawabanBenar: "Betul! yang dikirimkan antara satu perangkat ke perangkat lain dalam konsep OSI Model adalah data.",
                   clueJawabanSalah: "Tet tot jawabanmu salah"
                 },
@@ -68,7 +68,7 @@ const SoalPack1 = () => {
                 {
                 pertanyaan: "8. Ketika kalian megnirim pesan lewat whatsApp layer apa yang pertama menanggapi nya?",
                 pilihanJawaban: ["Physical Layer", "Network Layer", "Session Layer", "Application Layer"],
-                jawabanBenar: "Application",
+                jawabanBenar: "Application Layer",
                 clueJawabanBenar: "mantap! Session layer berfungsi sebagai pemroses pertama pesan yang kalian kirim",
                 clueJawabanSalah: "Tet tot jawabanmu salah"
                 },
