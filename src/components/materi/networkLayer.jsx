@@ -8,7 +8,7 @@ const NetworkLayer = () => {
         <section>
             <LogicMateri
                 penjelasanMateri={{
-                    judulMateri: 'Warna Button',
+                    judulMateri: 'Pertanyaan Seputat Network Layer',
                     konten: [
                     { tipe: 'paragraf', isi: 'Lapisan ini berada di atas Data Link Layer. Kalau Data Link ngatur komunikasi antar perangkat yang langsung terhubung (misalnya laptop ke router), maka Network Layer bertugas untuk menentukan jalur perjalanan data dari pengirim ke penerima yang berbeda jaringan.' },
                     { tipe: 'paragraf', isi: 'Fungsi utama dari layer ini adalah mengatur alamat logis (IP Address) dan menentukan rute terbaik (routing) agar data bisa sampai ke tujuan walaupun harus melewati banyak perangkat jaringan seperti router. Layer ini juga memastikan setiap potongan data punya alamat pengirim dan penerima yang benar.' },

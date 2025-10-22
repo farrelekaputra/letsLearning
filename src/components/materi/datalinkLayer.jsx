@@ -24,7 +24,7 @@ const DataLinkLayer = () => {
                 showNextButton={true}
                 nextPath="/mainPage/networklayer"
                 tampilNama={false}
-                JudulSoal={'Pertanyaan seputar grid'}
+                JudulSoal={'Pertanyaan seputar Data-Link Layer'}
                 soalCustom={[
                     {
                     pertanyaan: "Perangkat yang berfungsi untuk menyebarkan sinyal secara wired ke berbagai client atau tujuan adalah?",

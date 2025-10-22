@@ -23,7 +23,7 @@ const LayerOSI = () => {
                 showNextButton={true}
                 nextPath="/mainPage/physicalLayer"
                 tampilNama={false}
-                JudulSoal={'Pertanyaan seputar lapisan OSI'}
+                JudulSoal={'Pertanyaan seputar lapisan OSI Model'}
                 soalCustom={[
                     {
                     pertanyaan: "Bagaimana proses server mengirim data?",

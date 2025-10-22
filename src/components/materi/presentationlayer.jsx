@@ -22,12 +22,12 @@ const PresentationLayer = () => {
                 showNextButton={true}
                 nextPath="/mainPage/applicationlayer"
                 tampilNama={false}
-                JudulSoal={'Pertanyaan seputar Session Layer'}
+                JudulSoal={'Pertanyaan seputar Presentation Layer'}
                 soalCustom={[
                     {
-                    pertanyaan: "Proses mana yang bekerja ketika melakukan komentar pada sebuah video di YouTube?",
-                    pilihanJawaban: ["Establish process", "Terminate process", "Maintain Process", "Searching Process"],
-                    jawabanBenar: "Maintain Process",
+                    pertanyaan: "Apa itu enkripsi data?",
+                    pilihanJawaban: ["Proses mengamankan data", "Proses penerjemahan data", "Proses menyimpan data", "Proses mencari data"],
+                    jawabanBenar: "Proses mengamankan data",
                     clueJawabanBenar: "mantap mari lanjut ke materi selanjutnya",
                     clueJawabanSalah: "coba deh pelajari lagi contoh penggunaan Session Layer"
                     }
