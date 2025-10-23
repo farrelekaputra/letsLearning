@@ -22,7 +22,7 @@ const PhysicalLayer = () => {
                 showNextButton={true}
                 nextPath="/mainPage/DataLink"
                 tampilNama={false}
-                JudulSoal={'Pertanyaan seputar tipografi'}
+                JudulSoal={'Pertanyaan seputar Physical Layer'}
                 soalCustom={[
                     {
                     pertanyaan: "Diantara perangkat ini, mana kah yang termasuk dalam physical layer?",
