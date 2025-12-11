@@ -43,7 +43,7 @@ function App() {
                   <div className="nonWave-section  md:h-3/4 gap-12 md:gap-0 p-8 md:p-20 flex flex-col-reverse md:flex-row mx-auto md:pt-32 pt-24 items-center">
                     <div className="text text-gray-800 flex flex-col gap-4 md:gap-6">
                       <h1 className='text-5xl text-orange-500 font-semibold'>Let's Learning</h1>
-                      <p style={{ lineHeight: '32px' }} className='md:w-3/4 text-justify text-md/8'>Belajar Informatika lebih menyenangkan bersama kami, mari mengeksplore lebih jauh tentang dunia informatika bersama! Bukan hanya sekedar koding, namun juga tentang jaringan dan desain!</p>
+                      <p style={{ lineHeight: '28px' }} className='md:w-3/4 text-justify text-md/8'>Belajar Informatika lebih menyenangkan bersama kami, mari mengeksplore lebih jauh tentang dunia informatika bersama! Bukan hanya sekedar koding, namun juga tentang jaringan dan desain!</p>
                       <button onClick={scrollToLanding} className='p-2 md:p-4 rounded-lg bg-orange-500 text-white font-semibold hover:bg-orange-400 w-2/5'>Ayo Mulai!</button>
                     </div>
                     <img src={landingImage} className='w-4/5 md:w-1/3' alt="gambat thumbnail" />
