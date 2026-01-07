@@ -7,7 +7,9 @@ const SemuaMateri = ({KomponenMateri = []}) => {
     const navigate = useNavigate();
 
     const handleClick = (item) => {
-    if (item.tujuanmateri !== "/mainPage/osiLayer") {
+    if (item.tujuanmateri !== "/mainPage/osiLayer" && 
+        item.tujuanmateri !== "/mainPage/webDev" &&
+        item.tujuanmateri !== "/mainPage/desainWebsite") {
         Swal.fire({
         toast: true,
         position: "top-end",
@@ -56,7 +58,7 @@ const HalamanMateri = () => {
         <SemuaMateri
             KomponenMateri={[
                 {
-                    gambar:"https://www.tokozoom.com/assets/img/artikel/cc298eaa95d0f7d64b1aa0f705b08800.jpg",
+                    gambar:"https://www.network-supply.com/cdn/shop/articles/ChatGPT_Image_Sep_15_2025_11_29_37_AM.png?v=1757953612",
                     altGambar:"ini contoh gambar",
                     tujuanmateri:"/mainPage/osiLayer",
                     judul:"Lapisan OSI Model"
@@ -64,14 +66,14 @@ const HalamanMateri = () => {
                 {
                     gambar:"https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     altGambar:"pemrograman",
-                    tujuanmateri:"",
+                    tujuanmateri:"/mainPage/webDev",
                     judul:"Pengembangan Website"
                 },
                 {
                     gambar:"https://images.unsplash.com/photo-1541462608143-67571c6738dd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     altGambar:"Illustrasi",
-                    tujuanmateri:"",
-                    judul:"Desain Figma"
+                    tujuanmateri:"/mainPage/desainWebsite",
+                    judul:"Desain Website"
                 }
         ]}/>
     )

@@ -10,6 +10,13 @@ const Materi1 = ({ penjelasanMateri }) => {
             />
           );
         }
+        if (item.tipe === 'subHeading') {
+          return (
+            <p key={i} className="subHeading text-justify text-xl -mb-4 font-semibold leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: item.isi }}
+            />
+          );
+        }
         if (item.tipe === 'gambar') {
           return (
             <div key={i} className="flex flex-col items-center">

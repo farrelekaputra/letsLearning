@@ -2,6 +2,7 @@ import './App.css';
 import Landing from './components/dashboard';
 import { useRef } from 'react';
 import HalamanUtama from './components/mainPage';
+// osi layer
 import Jaringan from './components/materi/jaringanKomputer';
 import LayerOSI from './components/materi/layerOSI';
 import DataLinkLayer from './components/materi/datalinkLayer';
@@ -10,6 +11,17 @@ import TransportLayer from './components/materi/transportLayer';
 import SessionLayer from './components/materi/sessionlayer';
 import PresentationLayer from './components/materi/presentationlayer';
 import ApplicationLayer from './components/materi/applicationlayer';
+// web development
+import PengembanganWeb from './components/materi/webdev';
+import MateriHtml from './components/materi/html';
+import MateriCss from './components/materi/css';
+import MateriDatabase from './components/materi/database';
+// desain website
+import DesainWebsite from './components/materi/desainwebsite';
+import UrgensiDesainWeb from './components/materi/desainwebsite1';
+import ElemenDesainWeb from './components/materi/desainwebsite2';
+import SoftwareDesainWeb from './components/materi/desainwebsite3';
+// soal 
 import ListSoal from './components/soal/soal-bootstrap';
 import SoalPack1 from './components/soal/bootstrap1';
 import landingImage from './assets/thumbnail.png'
@@ -79,26 +91,37 @@ function App() {
             }
           />
 
-          {/* Semua materi lewat HalamanUtama */}
-          <Route>
-            <Route path="/daftarMateri" element={<HalamanMateri/>}/>
-          </Route>
-          <Route path="/mainPage" element={<HalamanUtama />}>
-            <Route path="osiLayer" element={<Jaringan />} />
-            <Route path="pengertianLayer" element={<LayerOSI />} />
-            <Route path="physicalLayer" element={<PhysicalLayer />} />
-            <Route path="DataLink" element={<DataLinkLayer />} />
-            <Route path="networklayer" element={<NetworkLayer />} />
-            <Route path="transportlayer" element={<TransportLayer />} />
-            <Route path="sessionlayer" element={<SessionLayer />} />
-            <Route path="presentationlayer" element={<PresentationLayer />} />
-            <Route path="applicationlayer" element={<ApplicationLayer />} />
-          </Route>
+          {/* Daftar materi (kalau memang beda halaman) */}
+          <Route path="/daftarMateri" element={<HalamanMateri />} />
 
+          {/* Semua materi lewat HalamanUtama */}
+          <Route path="/mainPage" element={<HalamanUtama />}>
+            {/* OSI Layer */}
+            <Route path="osiLayer" element={<Jaringan />} />
+            <Route path="osi/pengertian" element={<LayerOSI />} />
+            <Route path="osi/physical" element={<PhysicalLayer />} />
+            <Route path="osi/datalink" element={<DataLinkLayer />} />
+            <Route path="osi/network" element={<NetworkLayer />} />
+            <Route path="osi/transport" element={<TransportLayer />} />
+            <Route path="osi/session" element={<SessionLayer />} />
+            <Route path="osi/presentation" element={<PresentationLayer />} />
+            <Route path="osi/application" element={<ApplicationLayer />} />
+
+            {/* Pengembangan Web */}
+            <Route path="webDev" element={<PengembanganWeb />} />
+            <Route path="webDev/penjelasanHTML" element={<MateriHtml />} />
+            <Route path="webDev/penjelasanCSS" element={<MateriCss />} />
+            <Route path="webDev/penjelasanDatabase" element={<MateriDatabase />} />
+
+            {/* Desain website */}
+            <Route path="desainWebsite" element={<DesainWebsite />} />
+            <Route path="desainWebsite/kegunaanDesainWeb" element={<UrgensiDesainWeb />} />
+            <Route path="desainWebsite/elemenDesainWeb" element={<ElemenDesainWeb />} />
+            <Route path="desainWebsite/softwareDesainWeb" element={<SoftwareDesainWeb />} />
+          </Route>
 
           {/* Daftar soal */}
           <Route path="/listSoal" element={<ListSoal />} />
-
           {/* Halaman soal absolute path */}
           <Route path="/soal/soal1" element={<SoalPack1 />} />
         </Routes>

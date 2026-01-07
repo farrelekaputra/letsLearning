@@ -76,8 +76,8 @@ const ListSoal = () => {
         },
         {
           tujuanSoal: "",
-          judulSoal: "Pengenalan TCP/IP",
-          gambarSoal: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVXR8Y1CkwWs6-pU-QjgNcDbHryPaZ2krrgg&s",
+          judulSoal: "Pengenalan Desain Website",
+          gambarSoal: "https://www.trustindex.io/wp-content/uploads/2023/06/digital-designers-team-drawing-with-pen-computer-monitor_74855-10586.jpg",
           detailSoal: "20 soal",
           deskripsiSoal: "pilihan ganda",
         },

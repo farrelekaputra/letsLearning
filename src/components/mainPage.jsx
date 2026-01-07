@@ -1,21 +1,58 @@
 import { useState, useEffect } from 'react';
-import {Outlet} from 'react-router-dom';
+import {Outlet, useLocation} from 'react-router-dom';
 import Navbar from './navbar.jsx';
 import Sidebar from './sidebar.jsx';
 
+const SidebarOsi = [
+  { judul: "Pengantar OSI Model", materi: "/mainPage/osiLayer" },
+  { judul: "Lapisan OSI Model", materi: "/mainPage/osi/pengertian" },
+  { judul: "Physical Layer", materi: "/mainPage/osi/physical" },
+  { judul: "Data Link Layer", materi: "/mainPage/osi/dataLink" },
+  { judul: "Network Layer", materi: "/mainPage/osi/network" },
+  { judul: "Transport Layer", materi: "/mainPage/osi/transport" },
+  { judul: "Session Layer", materi: "/mainPage/osi/session" },
+  { judul: "Presentation Layer", materi: "/mainPage/osi/presentation" },
+  { judul: "Application Layer", materi: "/mainPage/osi/application" }
+]
+
+const SidebarWebDev = [
+    { judul: "Pengantar Website", materi: "/mainPage/webDev" },
+    { judul: "Apa itu HTML", materi: "/mainPage/webDev/penjelasanHTML" },
+    { judul: "Apa itu CSS", materi: "/mainPage/webDev/penjelasanCSS" },
+    { judul: "Apa itu Javascript", materi: "/mainPage/webDev/penjelasanDatabase" },
+]
+
+const SidebarDesainWeb = [
+    { judul: "Apa itu Desain Web", materi: "/mainPage/desainWebsite" },
+    { judul: "Fungsi Desain Web", materi: "/mainPage/desainWebsite/kegunaanDesainWeb" },
+    { judul: "Elemen Desain Web", materi: "/mainPage/desainWebsite/elemenDesainWeb" },
+    { judul: "Software Desain Web", materi: "/mainPage/desainWebsite/softwareDesainWeb" },
+]
+
 const HalamanUtama = () => {
+  const location = useLocation();
+  const pathname = location.pathname;
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth >= 768);
+
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setIsSidebarOpen(false);
-      } else {
-        setIsSidebarOpen(true);
-      }
+      setIsSidebarOpen(window.innerWidth >= 768);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  // 🔥 LOGIKA REUSABLE SIDEBAR
+  let sidebarList = [];
+
+  if (pathname.startsWith("/mainPage/osi")) {
+    sidebarList = SidebarOsi;
+  } else if (pathname.startsWith("/mainPage/webDev")) {
+    sidebarList = SidebarWebDev;
+  } else if (pathname.startsWith("/mainPage/desainWebsite")) {
+    sidebarList = SidebarDesainWeb;
+  }
 
   return (
     <section className="page1 flex flex-col h-auto md:h-screen mx-auto">
@@ -28,19 +65,7 @@ const HalamanUtama = () => {
               bg-blue-600
             `}
           >
-            <Sidebar
-              sidebarList={[
-                { judul: "Pengantar OSI Model", materi: "/mainPage/osiLayer" },
-                { judul: "Lapisan OSI Model", materi: "/mainPage/pengertianLayer" },
-                { judul: "Physical Layer", materi: "/mainPage/physicalLayer" },
-                { judul: "Data Link Layer", materi: "/mainPage/DataLink" },
-                { judul: "Network Layer", materi: "/mainPage/networklayer" },
-                { judul: "Transport Layer", materi: "/mainPage/transportlayer" },
-                { judul: "Session Layer", materi: "/mainPage/sessionlayer" },
-                { judul: "Presentation Layer", materi: "/mainPage/presentationlayer" },
-                { judul: "Application Layer", materi: "/mainPage/applicationlayer" },
-              ]}
-            />
+            <Sidebar sidebarList={sidebarList} />
           </div>
 
           <div
