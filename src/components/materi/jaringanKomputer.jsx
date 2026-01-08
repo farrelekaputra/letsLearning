@@ -21,7 +21,7 @@ const Jaringan = () => {
               modeExcel={true}
               singleSoal={false}
               showNextButton={true}
-              nextPath="/mainPage/pengertianLayer"
+              nextPath="/mainPage/osi/pengertian"
               tampilNama={false}
               JudulSoal={'Coba jawab soal dibawah'}
               soalCustom={[

@@ -21,7 +21,7 @@ const SessionLayer = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/presentationlayer"
+                nextPath="/mainPage/osi/presentation"
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar Session Layer'}
                 soalCustom={[

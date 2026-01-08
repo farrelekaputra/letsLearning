@@ -22,7 +22,7 @@ const DataLinkLayer = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/networklayer"
+                nextPath="/mainPage/osi/network"
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar Data-Link Layer'}
                 soalCustom={[

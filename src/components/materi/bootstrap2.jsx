@@ -20,7 +20,7 @@ const PhysicalLayer = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/DataLink"
+                nextPath="/mainPage/osi/dataLink"
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar Physical Layer'}
                 soalCustom={[

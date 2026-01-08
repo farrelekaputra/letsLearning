@@ -21,7 +21,7 @@ const LayerOSI = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/physicalLayer"
+                nextPath="/mainPage/osi/physical"
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar lapisan OSI Model'}
                 soalCustom={[

@@ -21,7 +21,7 @@ const NetworkLayer = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/transportlayer"
+                nextPath="/mainPage/osi/transport"
                 pesanPopup='Selamat! kamu telah menyelesaikan materi ini! Silahkan selanjutnya pilih simulasi ujian! Semangat!'
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar bootstrap'}

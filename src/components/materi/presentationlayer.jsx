@@ -8,7 +8,7 @@ const PresentationLayer = () => {
         <section>
             <LogicMateri
                 penjelasanMateri={{
-                    judulMateri: 'Session Layer',
+                    judulMateri: 'Presentation Layer',
                     konten: [
                     { tipe: 'paragraf', isi: 'Presentation Layer berada satu layer diatas Session Layer. Layer ini bertugas untuk mengubah data kedalam format yang bisa dipahami oleh kedua belah perangkat atau software. Layer ini berfungsi utnuk menerjemahkan format data agar bisa saling mengerti, sebagai contoh ASCII (bahasa komputer) ke bentuk Unicode, atau dari JPEG ke bitmap, selain itu layer ini bertugas melakukan kompresi data agar peroses pengirimannya menjadi lebih cepat, dan melakukan enkripsi atau deskripsi data agar data yang dikriim tetap aman dari penyadapan.' },
                     { tipe: 'gambar', url:enkripsi, caption:'Ilustrasi cara kerja proses enkripsi' },
@@ -20,7 +20,7 @@ const PresentationLayer = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/applicationlayer"
+                nextPath="/mainPage/osi/application"
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar Presentation Layer'}
                 soalCustom={[

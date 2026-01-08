@@ -26,7 +26,7 @@ const TransportLayer = () => {
                 modeExcel={true}
                 singleSoal={false}
                 showNextButton={true}
-                nextPath="/mainPage/sessionlayer"
+                nextPath="/mainPage/osi/session"
                 tampilNama={false}
                 JudulSoal={'Pertanyaan seputar Transport Layer'}
                 soalCustom={[
