@@ -10,10 +10,9 @@ const LayerOSI = () => {
                 penjelasanMateri={{
                     judulMateri: 'Lapisan OSI Model',
                     konten: [
-                    { tipe: 'paragraf', isi: 'Jika sebelumnya kita sudah mengetahui apa itu OSI Model dan permisalannya, sekarang kita mencoba mengetahui cara kerja osi layer itu membagi urutan pengiriman data menjadi beberapa tahapan, supaya prosesnya teratur. ' },
-                    { tipe: 'gambar', url:osiLayer, caption:'Penjelasan cara kerja OSI Layer' },
-                    { tipe: 'paragraf', isi: 'Dari yang sudah dijelaskan sebelumnya, beberapa layer di OSI Layer itu dapat di misalkan seperti berbagai pihak yang terlibat di kegiatan belanja online seperti e Commerce, ekspedisi, kurir, dan penerima. Jadi untuk memudahkan identifikasi di layer mana kah data yang dikirim atau diterima bermasalah. Untuk cara kerja nya saat mengirimkan data dimulai dari Physical layer menuju Application Layer, sebaliknya untuk proses penerimaan data dimulai dari layer paling Application layer dan diteruskan hingga ke physical layer.' },
+                    { tipe: 'paragraf', isi: 'Untuk memudahkan pemahaman, OSI Model dapat dianalogikan dengan proses belanja online. Ketika seseorang membeli barang melalui aplikasi e-commerce, barang tersebut tidak langsung sampai ke rumah pembeli. Ada beberapa tahapan yang harus dilalui, mulai dari aplikasi memproses pesanan, barang disiapkan dan dikemas, disortir berdasarkan kota tujuan, dikirim melalui ekspedisi, hingga akhirnya diantarkan oleh kurir ke alamat penerima. Jika terjadi masalah, misalnya barang terlambat atau rusak, maka kita dapat menelusuri di tahap mana masalah tersebut terjadi. Prinsip inilah yang juga diterapkan dalam OSI Model.' },
                     { tipe: 'gambar', url:pindahData, caption:'Penjelasan cara kerja OSI Layer' },
+                    { tipe: 'paragraf', isi: 'Dalam proses pengiriman data, alur komunikasi dimulai dari Physical Layer menuju Application Layer di sisi pengirim. Sebaliknya, pada sisi penerima, data diproses dari Application Layer hingga kembali ke Physical Layer. Dengan demikian, setiap layer bekerja secara berurutan dan saling mendukung.' },
                     ]
                 }}
                 />

@@ -10,9 +10,15 @@ const PhysicalLayer = () => {
                 penjelasanMateri={{
                     judulMateri: 'Physical Layer',
                     konten: [
-                    { tipe: 'paragraf', isi: 'Sesuai dengan namanya, layer ini merupakan lapisan yang terdiri dari perangkat keras yang dapat langsung berinteraksi dengan user secara fisik, lapisan ini berada di paling dasar. Lapisan ini berfungsi buat mengubah data jadi sinyal listrik, cahaya, atau gelombang radio. Untuk contoh perangkat atau protocol di layer ini terdapat perangkat yang menghubungkan antara device baik itu secara kabel atau nirkabel, untuk kabel contohnya terdapat LAN, Coaxial, dan Fiber Optik' },
-                    { tipe: 'gambar', url: layer1, caption: 'Contoh perangkat yang terdapat di Physical Layer' },
-                    { tipe: 'paragraf', isi: 'Nah, kalau pakai permisalan sebelumnya physical layer ini seperti pihak e commerce yang menyiapkan setiap pesanan yang di request oleh pembeli dan siap dikirimkan ke ekspedisi (layer selanjutnya).' }
+                    { tipe: 'paragraf', isi: 'Physical Layer merupakan lapisan paling dasar dalam OSI Model. Lapisan ini berhubungan langsung dengan perangkat keras dan media fisik yang digunakan untuk mengirimkan data. Fungsi utama Physical Layer adalah mengubah data digital menjadi sinyal fisik berupa sinyal listrik, cahaya, atau gelombang radio agar dapat ditransmisikan melalui media jaringan.' },
+                    {
+                        tipe: 'layout',
+                        arah: 'col',
+                        items: [
+                            { tipe: 'gambar', url: layer1, caption: 'Contoh perangkat yang terdapat di Physical Layer' },
+                            { tipe: 'paragraf', isi: 'Contoh media dan perangkat pada Physical Layer antara lain kabel LAN (UTP), kabel coaxial, fiber optik, serta media nirkabel seperti sinyal WiFi. Selain itu, Physical Layer juga mengatur spesifikasi teknis seperti bentuk konektor, pin, tegangan listrik, serta metode encoding sinyal. Dalam analogi belanja online, Physical Layer dapat diibaratkan sebagai pihak gudang atau e-commerce yang menyiapkan barang secara fisik agar siap dikirim ke tahap selanjutnya.' }
+                        ]
+                    },
                     ]
                 }}
                 />

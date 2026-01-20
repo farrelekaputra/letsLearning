@@ -10,10 +10,27 @@ const Jaringan = () => {
               penjelasanMateri={{
                 judulMateri: 'Lapisan OSI Model',
                 konten: [
-                  { tipe: 'paragraf', isi: 'OSI Model adalah sebuah model/konsep yang menjelaskan bagaimana data bisa dikirim dari satu komputer ke komputer lain. Dengan adanya OSI Model, proses pengiriman data menjadi lebih teratur, Langkah-langkahnya jelas, dan lebih mudah untuk menemukan masalah jika terjadi gangguan. Hal ini karena di setiap layer memiliki fungsi yang berbeda-beda sehingga kita bisa tahu masalahnya ada di layer mana. ' },
-                  { tipe: 'gambar', url: olshop, caption: 'Analogi OSI Model adalah seperti belanja online' },
-                  { tipe: 'paragraf', isi: 'Sebagai contoh, OSI Model itu seperti proses beli barang online. Kalau kalian pesan barang secara online, barang itu tidak mungkin langsung tiba begitu saja di rumah kalian. Ada beberapa alur atau tahapan yang dilewati paket itu, mulai dari pihak aplikasi yang memproses barang yang udah kalian check out, berlanjut barang dipisahin sesuai kota penerima, dan terakhir barang dikrim ke kota masing-masing. Jadi misal barang kalian ada masalah kalian bisa tau kira-kira dimana letak masalahnya.' },
-                  { tipe: 'paragraf', isi: 'Nah, pada pembelajaran kali ini kalian mengenal lapisan di setiap OSI Model yang seperti petugas-petugas dalam kegiatan belanja online, jadi mari kita mulai!' }
+                  { 
+                    tipe: 'paragraf', 
+                    isi: 'OSI Model (Open System Interconnection) merupakan sebuah model konseptual yang digunakan sebagai acuan untuk menjelaskan bagaimana proses komunikasi dan pengiriman data terjadi dari satu komputer ke komputer lain melalui jaringan. Model ini membagi proses komunikasi data menjadi beberapa lapisan (layer) yang masing-masing memiliki fungsi yang berbeda. Dengan adanya pembagian ini, proses pengiriman data menjadi lebih terstruktur, langkah-langkahnya jelas, serta memudahkan proses analisis dan penelusuran kesalahan (troubleshooting) apabila terjadi gangguan pada jaringan.' 
+                  },
+                  { 
+                    tipe: 'layout',
+                    arah: 'col',
+                    items: [
+                    {
+                      tipe: 'gambar', url: olshop, 
+                      caption: 'Analogi OSI Model adalah seperti belanja online' 
+                    },
+                    { 
+                      tipe: 'paragraf', 
+                      isi: 'Sebagai contoh, OSI Model itu seperti proses beli barang online. Kalau kalian pesan barang secara online, barang itu tidak mungkin langsung tiba begitu saja di rumah kalian. Ada beberapa alur atau tahapan yang dilewati paket itu, mulai dari pihak aplikasi yang memproses barang yang udah kalian check out, berlanjut barang dipisahin sesuai kota penerima, dan terakhir barang dikrim ke kota masing-masing. Jadi misal barang kalian ada masalah kalian bisa tau kira-kira dimana letak masalahnya. Jadi, ayo mulai pembelajaran!' 
+                    }]    
+                  },
+                  { 
+                    tipe: 'paragraf', 
+                    isi: 'Secara umum, OSI Model terdiri dari 7 lapisan, di mana lapisan bagian atas (Application, Presentation, dan Session) berfokus pada layanan aplikasi kepada pengguna, sedangkan lapisan bagian bawah (Transport, Network, Data Link, dan Physical) berorientasi pada proses pengiriman data dari satu perangkat ke perangkat lain secara fisik dan logis.' 
+                  }
                 ]
               }}
             />
