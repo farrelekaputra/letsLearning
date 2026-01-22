@@ -15,6 +15,10 @@ const PopupNama = ({ onSubmit }) => {
       <div className="bg-white rounded-xl shadow-lg p-6 w-96 text-center">
         <h2 className="text-xl font-bold mb-4">Sebelum mulai tes</h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+          <div className="teks">
+            <p>Tes ini berlangsung selama 10 menit. Setelah waktu habis, hasil tes akan ditampilkan secara otomatis.</p>
+            <p>Pastikan semua soal terjawab untuk menyelesaikan tes ini</p>
+          </div>
           <input
             type="text"
             placeholder="Masukkan nama kamu..."

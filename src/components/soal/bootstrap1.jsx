@@ -14,7 +14,7 @@ const SoalPack1 = () => {
               popupFinish={true}
               pesanPopup='Selamat! Kamu telah membuktikan kehebatanmu! 98% pengguna telah kamu kalahkan, you deserve it!'
               tampilNama={true}
-              JudulSoal={'Coba jawab soal dibawah'}
+              JudulSoal={'Jawab soal dibawah'}
               soalCustom={[
                 {
                   pertanyaan: "1. Dalam konsep OSI Model, apa yang dikirimkan dari satu perangkat atau software ke tujuan?",
