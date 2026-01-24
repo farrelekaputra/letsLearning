@@ -12,8 +12,13 @@ const ApplicationLayer = () => {
                     konten: [
                     { tipe: 'paragraf', isi: 'Layer atau lapisan yang menyediakan kebutuhan antarmuka antara pengguna dan jaringan. Semua aplikasi atau software yang sering kalian gunakan untuk mengirim data seperti browser, WhatsApp, dll bekerja di layer ini' },
                     { tipe: 'paragraf', isi: 'FUngsi layer ini adalah menyediakan layanan jaringan untuk aplikasi pengguna seperti HTTP, SMTP, FTP, DNS, selain itu layer ini berfungsi untuk menyiapkan data agar dapat dikirim melalui layer yang berada dibawahnya, dan mengatur sesi komunikasi antar aplikasi.' },
-                    { tipe: 'gambar', url:applayerIlustrasi, caption:'Ilustrasi proses pengiriman data kepada pengguna' },
-                    { tipe: 'paragraf', isi: 'Contoh nya adalah ketika mengirim pesan lewat WhatsApp, disinilah pesan yang telah diketik berubah jadi format teks digital dan siap dikirimkan ke layer yang berada dibawahnya.' },
+                    {tipe: 'layout', 
+                        arah: 'col',
+                        items:[
+                            { tipe: 'gambar', width: 'w-full md:w-3/4', url:applayerIlustrasi, caption:'Ilustrasi proses pengiriman data kepada pengguna' },
+                            { tipe: 'paragraf', isi: 'Contoh nya adalah ketika mengirim pesan lewat WhatsApp, disinilah pesan yang telah diketik berubah jadi format teks digital dan siap dikirimkan ke layer yang berada dibawahnya.' },
+                        ]
+                    },
                     ]
                 }}
                 />

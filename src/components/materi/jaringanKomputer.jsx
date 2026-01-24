@@ -19,7 +19,7 @@ const Jaringan = () => {
                     arah: 'col',
                     items: [
                     {
-                      tipe: 'gambar', url: olshop, 
+                      tipe: 'gambar', url: olshop, width:'md:w-3/4', 
                       caption: 'Analogi OSI Model adalah seperti belanja online' 
                     },
                     { 

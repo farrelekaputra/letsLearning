@@ -1,5 +1,6 @@
 import osiLayer from "../../assets/osi-layer.png";
 import Segment from "../../assets/segment.png";
+import Segment1 from "../../assets/segmentMobile.png";
 import kurir from "../../assets/kurir.jpg";
 import LogicMateri from '../materi1';
 import Contohsoal from '../loopingsoal';
@@ -14,13 +15,14 @@ const TransportLayer = () => {
                     konten: [
                     { tipe: 'paragraf', isi: 'Lapisan ini berada diatas Network Layer. Nah, kalau Network Layer sudah memastikan data bisa melewati berbagai jaringan dan sampai ke IP Address tujuan, maka Transport Layer bertugas untuk mengatur bagaimana data itu dikirim dan diterima dengan aman, utuh, dan berurutan.' },
                     { tipe: 'paragraf', isi: 'Fungsi utama dari Layer ini adalah untuk ememcah data menjadi berbagai segmen kecil agar bisa dikirim bertahap untuk menjaga keandalan saat pengiriman data, dan mengatur aliran data. Disini tugas network layer itu sama persis seperti kurir yang memastikan paket sampai di tujuan dengan aman' },
-                    { tipe: 'gambar', width: 'md:w-3/4', url:Segment, caption:'Proses pengolahan data menjadi segment' },
+                    { tipe: 'gambar', width: 'md:w-3/4', url: Segment, display: 'hidden md:block'},
+                    { tipe: 'gambar', width: 'w-10/12', url: Segment1, display: 'block md:hidden', caption:'Proses pengolahan data menjadi segment' },
                     { tipe: 'paragraf', isi: 'Dari yang sudah dijelaskan sebelumnya, beberapa layer di OSI Layer itu dapat di misalkan seperti berbagai pihak yang terlibat di kegiatan belanja online seperti e Commerce, ekspedisi, kurir, dan penerima. Jadi untuk memudahkan identifikasi di layer mana kah data yang dikirim atau diterima bermasalah. Untuk cara kerja nya saat mengirimkan data dimulai dari Physical layer menuju Application Layer, sebaliknya untuk proses penerimaan data dimulai dari layer paling Application layer dan diteruskan hingga ke physical layer.' },
                     {
                         tipe: 'layout',
                         arah: 'col',
                         items:[
-                            { tipe: 'gambar', url:kurir, caption:'Contoh kurir sebagai pengirim data' },
+                            { tipe: 'gambar', url:kurir, display: 'block md:hidden', caption:'Contoh kurir sebagai pengirim data' },
                             { tipe: 'paragraf', isi: 'Di Transport Layer juga terdapat dua protocol penting untuk proses pengiriman data, yaitu TCP dan UDP. TCP merupakan protocol yang berfungsi untuk memastikan setiap data dikirim secara berurutan dan lengkap, sedangkan UDP merupakan protocol pengiriman data dengan lebih cepat tanpa jaminan data sampai dengan utuh.' },
                         ]
                     },

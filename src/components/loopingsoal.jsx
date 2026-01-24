@@ -93,8 +93,15 @@ const Contohsoal = ({
 
   const semuaSudahDijawab = jawaban.every((j) => j !== "");
 
+  const actionWrapperClass = singleSoal
+  ? "w-full md:w-1/4 md:fixed md:right-20 md:top-24 flex flex-col gap-3 p-4 border rounded-xl"
+  : "w-3/4 flex flex-col gap-3 p-4 mt-6";
+
+  const bolehNext = semuaSudahDijawab && (singleSoal || sudahDikoreksi);
+  const warnaNextButton = !bolehNext ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'bg-green-500 text-white'
+
   return (
-    <div className="p-4 md:p-6 -mt-4 w-full">
+    <div className="md:p-6 md:-mt-4 w-full">
 
       {/* ================= POPUP NAMA ================= */}
       {showNamaPopup && (
@@ -111,12 +118,12 @@ const Contohsoal = ({
       <p className="text-2xl font-semibold">{JudulSoal}</p>
 
       {/* ================= KONTEN ================= */}
-      <section className="mt-4 w-full flex flex-col md:flex-row gap-6">
+      <section className="mt-4 w-full flex flex-col gap-6">
         
         {/* ===== SOAL ===== */}
         <div className="w-full md:w-3/4 flex flex-col gap-4">
         {showCountdown && (
-            <div className="md:hidden bg-white p-2 rounded block fixed right-5 top-16">
+            <div className="showCOuntDownMobile md:hidden bg-white p-2 rounded block fixed right-5 top-16">
               <p>Siswa waktu :</p>
             <Countdown
               value={formatTime(countdown)}
@@ -127,10 +134,10 @@ const Contohsoal = ({
             </div>
           )}
           {daftarSoal.map((soal, index) => (
-            <div key={index}>
+            <div key={index} className="flex flex-col p-4">
               <h1>{soal.pertanyaan}</h1>
 
-              <form className="mt-4 space-y-2">
+              <form className="space-y-2">
                 {soal.pilihanJawaban.map((pilihan, i) => (
                   <div key={i} className="flex gap-3 items-center">
                     <input
@@ -170,42 +177,38 @@ const Contohsoal = ({
           )}
         </div>
 
-        <div className="w-full md:w-1/4 md:fixed md:right-20 md:top-24 flex flex-col gap-3 p-4 border rounded-xl">
-          
-          {showCountdown && (
-            <div className="hidden md:block">
-              <p>Sisa waktu mengerjakan :</p>
-              <Countdown
-                value={formatTime(countdown)}
-                as="div"
-                size="text-5xl"
-                color="text-gray-700"
-                />
-            </div>
-          )}
+        <div className={actionWrapperClass}>
+        {showCountdown && singleSoal && (
+          <div className="hidden md:flex md:flex-col">
+            <p>Sisa waktu mengerjakan :</p>
+            <Countdown
+              value={formatTime(countdown)}
+              as="div"
+              size="text-5xl"
+              color="text-gray-700"
+            />
+          </div>
+        )}
 
-          <button
-            onClick={handleCheckAll}
-            disabled={!semuaSudahDijawab}
-            className="p-2 rounded bg-blue-500 text-white"
-          >
-            Cek Jawaban
-          </button>
+        <button
+          onClick={handleCheckAll}
+          disabled={!semuaSudahDijawab}
+          className="p-2 rounded bg-blue-500 text-white"
+        >
+          Cek Jawaban
+        </button>
 
-          {showNextButton && (
+        {showNextButton && (
           <button
             onClick={handleNext}
-            disabled={!semuaSudahDijawab}
-            className={`p-2 rounded ${
-              semuaSudahDijawab
-                ? "bg-green-500 text-white"
-                : "bg-gray-300 text-gray-600 cursor-not-allowed"
-            }`}
+            disabled={!bolehNext}
+            className={`p-2 rounded transition-colors duration-200 ${warnaNextButton}`}
           >
             Selanjutnya
           </button>
-          )}
-        </div>
+        )}
+      </div>
+
       </section>
 
       {/* ================= POPUP HASIL ================= */}

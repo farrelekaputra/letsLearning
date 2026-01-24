@@ -32,7 +32,7 @@ const Materi1 = ({ penjelasanMateri }) => {
               <img
                 src={item.url}
                 alt="Gambar"
-                className={`gambar my-4 w-full ${item.width || ""}`}
+                className={`gambar my-4 w-full ${item.width || ""} ${item.display || ""}`}
               />
               {item.caption && (
                 <div className="caption text-sm text-gray-600 text-center">
@@ -54,7 +54,7 @@ const Materi1 = ({ penjelasanMateri }) => {
                   return (
                     <div
                       key={j}
-                      className={`w-full md:w-${sub.width || "1/2"}`}
+                      className={`${sub.width || ""}`}
                     >
                       <img
                         src={sub.url}
@@ -74,7 +74,7 @@ const Materi1 = ({ penjelasanMateri }) => {
                   return (
                     <p
                       key={j}
-                      className="subparagraf w-full md:w-1/2 text-justify leading-relaxed"
+                      className={`subparagraf w-full md:w-1/2 text-justify leading-relaxed md:w-${sub.width || ""}`}
                       dangerouslySetInnerHTML={{ __html: sub.isi }}
                     />
                   );
