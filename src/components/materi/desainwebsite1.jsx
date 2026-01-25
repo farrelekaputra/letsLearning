@@ -11,8 +11,12 @@ const UrgensiDesainWeb = () => {
                     judulMateri: 'Pengantar Desain Website',
                     konten: [
                     { tipe: 'paragraf', isi: 'Desain website sangat berpengaruh terhadap kesan pertama pengguna. Dalam hitungan detik, pengguna dapat memutuskan apakah akan melanjutkan menjelajah website atau meninggalkannya. Desain yang baik akan membuat pengguna merasa nyaman, percaya, dan tertarik untuk berinteraksi lebih lanjut.' },
-                    { tipe: 'gambar', width:'md:w-3/4', url:gambar1, caption:'Desain website yang baik akan menarik audiens' },
-                    { tipe: 'paragraf', isi: 'Selain itu, desain website membantu pengguna menemukan informasi dengan lebih cepat. Tata letak yang rapi, warna yang sesuai, dan teks yang mudah dibaca akan meningkatkan efektivitas website dalam menyampaikan pesan. Dengan kata lain, desain yang baik mendukung fungsi website agar dapat berjalan secara optimal.' },
+                    { tipe:'layout', arah:'col',
+                        items:[
+                            { tipe: 'gambar', width:'md:w-3/4', url:gambar1, caption:'Desain website yang baik akan menarik audiens' },
+                            { tipe: 'paragraf', isi: 'Selain itu, desain website membantu pengguna menemukan informasi dengan lebih cepat. Tata letak yang rapi, warna yang sesuai, dan teks yang mudah dibaca akan meningkatkan efektivitas website dalam menyampaikan pesan. Dengan kata lain, desain yang baik mendukung fungsi website agar dapat berjalan secara optimal.' },
+                        ]
+                    },
                     ]
                 }}
                 />
