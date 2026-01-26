@@ -10,8 +10,7 @@ const ApplicationLayer = () => {
                 penjelasanMateri={{
                     judulMateri: 'Application Layer',
                     konten: [
-                    { tipe: 'paragraf', isi: 'Layer atau lapisan yang menyediakan kebutuhan antarmuka antara pengguna dan jaringan. Semua aplikasi atau software yang sering kalian gunakan untuk mengirim data seperti browser, WhatsApp, dll bekerja di layer ini' },
-                    { tipe: 'paragraf', isi: 'FUngsi layer ini adalah menyediakan layanan jaringan untuk aplikasi pengguna seperti HTTP, SMTP, FTP, DNS, selain itu layer ini berfungsi untuk menyiapkan data agar dapat dikirim melalui layer yang berada dibawahnya, dan mengatur sesi komunikasi antar aplikasi.' },
+                    { tipe: 'paragraf', isi: 'Layer atau lapisan yang menyediakan kebutuhan antarmuka antara pengguna dan jaringan. Semua aplikasi atau software yang sering kalian gunakan untuk mengirim data seperti browser, WhatsApp, dll bekerja di layer ini Fungsi layer ini adalah menyediakan layanan jaringan untuk aplikasi pengguna seperti HTTP, SMTP, FTP, DNS, selain itu layer ini berfungsi untuk menyiapkan data agar dapat dikirim melalui layer yang berada dibawahnya, dan mengatur sesi komunikasi antar aplikasi.' },
                     {tipe: 'layout', 
                         arah: 'col',
                         items:[

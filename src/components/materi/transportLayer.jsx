@@ -1,7 +1,7 @@
 import osiLayer from "../../assets/osi-layer.png";
 import Segment from "../../assets/segment.png";
 import Segment1 from "../../assets/segmentMobile.png";
-import kurir from "../../assets/kurir.jpg";
+import kurir from "../../assets/tcp-udp.png";
 import LogicMateri from '../materi1';
 import Contohsoal from '../loopingsoal';
 import tcilustrasi from '../../assets/tcp-udp.png' 
@@ -22,7 +22,7 @@ const TransportLayer = () => {
                         tipe: 'layout',
                         arah: 'col',
                         items:[
-                            { tipe: 'gambar', url:kurir, display: 'block md:hidden', caption:'Contoh kurir sebagai pengirim data' },
+                            { tipe: 'gambar', width: 'w-full md:w-1/2', url:kurir, display: 'block md:hidden', caption:'Cara kerja protocol TCP dan UDP' },
                             { tipe: 'paragraf', isi: 'Di Transport Layer juga terdapat dua protocol penting untuk proses pengiriman data, yaitu TCP dan UDP. TCP merupakan protocol yang berfungsi untuk memastikan setiap data dikirim secara berurutan dan lengkap, sedangkan UDP merupakan protocol pengiriman data dengan lebih cepat tanpa jaminan data sampai dengan utuh.' },
                         ]
                     },

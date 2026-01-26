@@ -7,7 +7,7 @@ const gambarlayout = 'http://img.freepik.com/premium-psd/architecture-interior-w
 
 const ElemenDesainWeb = () => {
     return(
-         <section>
+                <section>
                     <LogicMateri
                         penjelasanMateri={{
                             judulMateri: 'Komponen Desain Website',

@@ -134,10 +134,10 @@ const Contohsoal = ({
             </div>
           )}
           {daftarSoal.map((soal, index) => (
-            <div key={index} className="flex flex-col p-4">
+            <div key={index} className="flex flex-col p-4 gap-2">
               <h1>{soal.pertanyaan}</h1>
 
-              <form className="space-y-2">
+              <form className="space-y-2 ">
                 {soal.pilihanJawaban.map((pilihan, i) => (
                   <div key={i} className="flex gap-3 items-center">
                     <input
